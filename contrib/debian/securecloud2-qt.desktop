@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=SecureCloud2 Core
+Comment=SecureCloud2 P2P Cryptocurrency
+Comment[fr]=SecureCloud2, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SecureCloud2, eşten eşe kriptografik sanal para birimi
+Exec=securecloud2-qt %u
+Terminal=false
+Type=Application
+Icon=securecloud2128
+MimeType=x-scheme-handler/securecloud2;
+Categories=Office;Finance;
+StartupWMClass=SecureCloud2-qt

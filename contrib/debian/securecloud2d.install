@@ -1,0 +1,3 @@
+usr/local/bin/securecloud2d usr/bin
+usr/local/bin/securecloud2-cli usr/bin
+debian/examples/securecloud2.conf etc/securecloud2

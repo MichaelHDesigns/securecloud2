@@ -1,0 +1,6 @@
+usr/local/bin/securecloud2-qt usr/bin
+share/pixmaps/securecloud232.xpm usr/share/pixmaps
+share/pixmaps/securecloud216.xpm usr/share/pixmaps
+share/pixmaps/securecloud2128.png usr/share/pixmaps
+debian/securecloud2-qt.desktop usr/share/applications
+debian/securecloud2-qt.protocol usr/share/kde4/services/

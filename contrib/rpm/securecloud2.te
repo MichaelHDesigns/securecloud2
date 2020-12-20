@@ -1,0 +1,81 @@
+policy_module(securecloud2, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type securecloud2_t;
+type securecloud2_exec_t;
+init_daemon_domain(securecloud2_t, securecloud2_exec_t)
+
+permissive securecloud2_t;
+
+type securecloud2_initrc_exec_t;
+init_script_file(securecloud2_initrc_exec_t)
+
+type securecloud2_conf_t;
+files_type(securecloud2_conf_t)
+
+type securecloud2_var_lib_t;
+files_type(securecloud2_var_lib_t)
+
+type securecloud2_var_run_t;
+files_type(securecloud2_var_run_t)
+
+type securecloud2_port_t;
+corenet_port(securecloud2_port_t)
+
+########################################
+#
+# securecloud2 local policy
+#
+allow securecloud2_t self:process { fork };
+
+allow securecloud2_t self:fifo_file rw_fifo_file_perms;
+allow securecloud2_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(securecloud2_t, securecloud2_conf_t, securecloud2_conf_t)
+manage_files_pattern(securecloud2_t, securecloud2_conf_t, securecloud2_conf_t)
+
+manage_dirs_pattern(securecloud2_t, securecloud2_var_lib_t, securecloud2_var_lib_t)
+manage_files_pattern(securecloud2_t, securecloud2_var_lib_t, securecloud2_var_lib_t)
+files_var_lib_filetrans(securecloud2_t, securecloud2_var_lib_t, { dir file })
+
+manage_dirs_pattern(securecloud2_t, securecloud2_var_run_t, securecloud2_var_run_t)
+manage_files_pattern(securecloud2_t, securecloud2_var_run_t, securecloud2_var_run_t)
+
+sysnet_dns_name_resolve(securecloud2_t)
+corenet_all_recvfrom_unlabeled(securecloud2_t)
+
+allow securecloud2_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(securecloud2_t)
+corenet_tcp_sendrecv_generic_node(securecloud2_t)
+corenet_tcp_sendrecv_all_ports(securecloud2_t)
+corenet_tcp_bind_generic_node(securecloud2_t)
+
+gen_require(`
+    type securecloud2_port_t;
+')
+allow securecloud2_t securecloud2_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type securecloud2_port_t;
+')
+allow securecloud2_t securecloud2_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(securecloud2_t)
+
+files_read_etc_files(securecloud2_t)
+
+miscfiles_read_localization(securecloud2_t)
+
+sysnet_dns_name_resolve(securecloud2_t)
+
+allow securecloud2_t securecloud2_exec_t:file execute_no_trans;
+allow securecloud2_t self:process setsched;
+corecmd_exec_ls(securecloud2_t)
+corenet_tcp_connect_http_port(securecloud2_t)
+dev_read_urand(securecloud2_t)
+fs_getattr_xattr_fs(securecloud2_t)
+kernel_read_system_state(securecloud2_t)

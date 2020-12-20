@@ -1,0 +1,157 @@
+
+## <summary>policy for securecloud2</summary>
+
+
+########################################
+## <summary>
+##	Transition to securecloud2.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`securecloud2_domtrans',`
+	gen_require(`
+		type securecloud2_t, securecloud2_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, securecloud2_exec_t, securecloud2_t)
+')
+
+
+########################################
+## <summary>
+##	Execute securecloud2 server in the securecloud2 domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`securecloud2_initrc_domtrans',`
+	gen_require(`
+		type securecloud2_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, securecloud2_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search securecloud2 lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`securecloud2_search_lib',`
+	gen_require(`
+		type securecloud2_var_lib_t;
+	')
+
+	allow $1 securecloud2_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read securecloud2 lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`securecloud2_read_lib_files',`
+	gen_require(`
+		type securecloud2_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, securecloud2_var_lib_t, securecloud2_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage securecloud2 lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`securecloud2_manage_lib_files',`
+	gen_require(`
+		type securecloud2_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, securecloud2_var_lib_t, securecloud2_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage securecloud2 lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`securecloud2_manage_lib_dirs',`
+	gen_require(`
+		type securecloud2_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, securecloud2_var_lib_t, securecloud2_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a securecloud2 environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`securecloud2_admin',`
+	gen_require(`
+		type securecloud2_t;
+		type securecloud2_initrc_exec_t;
+		type securecloud2_var_lib_t;
+	')
+
+	allow $1 securecloud2_t:process { ptrace signal_perms };
+	ps_process_pattern($1, securecloud2_t)
+
+	securecloud2_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 securecloud2_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, securecloud2_var_lib_t)
+
+')
+

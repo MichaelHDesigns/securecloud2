@@ -1,0 +1,37 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/securecloud2_bg.qm</file>
+        <file alias="ca">locale/securecloud2_ca.qm</file>
+        <file alias="cs">locale/securecloud2_cs.qm</file>
+        <file alias="da">locale/securecloud2_da.qm</file>
+        <file alias="de">locale/securecloud2_de.qm</file>
+        <file alias="en">locale/securecloud2_en.qm</file>
+        <file alias="en_GB">locale/securecloud2_en_GB.qm</file>
+        <file alias="en_US">locale/securecloud2_en_US.qm</file>
+        <file alias="eo">locale/securecloud2_eo.qm</file>
+        <file alias="es">locale/securecloud2_es.qm</file>
+        <file alias="es_ES">locale/securecloud2_es_ES.qm</file>
+        <file alias="fi">locale/securecloud2_fi.qm</file>
+        <file alias="fr_FR">locale/securecloud2_fr_FR.qm</file>
+        <file alias="hi_IN">locale/securecloud2_hi_IN.qm</file>
+        <file alias="hr">locale/securecloud2_hr.qm</file>
+        <file alias="hr_HR">locale/securecloud2_hr_HR.qm</file>
+        <file alias="it">locale/securecloud2_it.qm</file>
+        <file alias="ja">locale/securecloud2_ja.qm</file>
+        <file alias="ko_KR">locale/securecloud2_ko_KR.qm</file>
+        <file alias="lt_LT">locale/securecloud2_lt_LT.qm</file>
+        <file alias="nl">locale/securecloud2_nl.qm</file>
+        <file alias="pl">locale/securecloud2_pl.qm</file>
+        <file alias="pt">locale/securecloud2_pt.qm</file>
+        <file alias="pt_BR">locale/securecloud2_pt_BR.qm</file>
+        <file alias="ro_RO">locale/securecloud2_ro_RO.qm</file>
+        <file alias="ru">locale/securecloud2_ru.qm</file>
+        <file alias="sk">locale/securecloud2_sk.qm</file>
+        <file alias="sv">locale/securecloud2_sv.qm</file>
+        <file alias="tr">locale/securecloud2_tr.qm</file>
+        <file alias="uk">locale/securecloud2_uk.qm</file>
+        <file alias="vi">locale/securecloud2_vi.qm</file>
+        <file alias="zh_CN">locale/securecloud2_zh_CN.qm</file>
+        <file alias="zh_TW">locale/securecloud2_zh_TW.qm</file>
+    </qresource>
+</RCC>
