@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SecureCloud2_ZSC2TRACKER_H
-#define SecureCloud2_ZSC2TRACKER_H
+#ifndef SecureCloud2_ZSCNTRACKER_H
+#define SecureCloud2_ZSCNTRACKER_H
 
 #include "zerocoin.h"
 #include "witness.h"
@@ -11,9 +11,9 @@
 #include <list>
 
 class CDeterministicMint;
-class CzSC2Wallet;
+class CzSCNWallet;
 
-class CzSC2Tracker
+class CzSCNTracker
 {
 private:
     bool fInitialized;
@@ -23,9 +23,9 @@ private:
     std::map<uint256, std::unique_ptr<CoinWitnessData> > mapStakeCache; //serialhash, witness value, height
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzSC2Tracker(std::string strWalletFile);
-    ~CzSC2Tracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzSC2Wallet* zSC2Wallet = NULL);
+    CzSCNTracker(std::string strWalletFile);
+    ~CzSCNTracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzSCNWallet* zSCNWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -55,4 +55,4 @@ public:
     void Clear();
 };
 
-#endif //SecureCloud2_ZSC2TRACKER_H
+#endif //SecureCloud2_ZSCNTRACKER_H

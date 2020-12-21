@@ -40,7 +40,7 @@ uint32_t CZPivStake::GetChecksum()
     return nChecksum;
 }
 
-// The zSC2 block index is the first appearance of the accumulator checksum that was used in the spend
+// The zSCN block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
 CBlockIndex* CZPivStake::GetIndexFrom()
@@ -100,7 +100,7 @@ bool CZPivStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CZPivStake::GetUniqueness()
 {
-    //The unique identifier for a zSC2 is a hash of the serial
+    //The unique identifier for a zSCN is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
@@ -128,23 +128,23 @@ bool CZPivStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 
 bool CZPivStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zSC2 that was staked
+    //Create an output returning the zSCN that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZSC2OutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zSC2 output", __func__);
+    if (!pwallet->CreateZSCNOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zSCN output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zSC2", __func__);
+        return error("%s: failed to database the staked zSCN", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZSC2OutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zSC2 output", __func__);
+        if (!pwallet->CreateZSCNOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zSCN output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -161,7 +161,7 @@ bool CZPivStake::GetTxFrom(CTransaction& tx)
 
 bool CZPivStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzSC2Tracker* zsc2Tracker = pwallet->zsc2Tracker.get();
+    CzSCNTracker* zsc2Tracker = pwallet->zsc2Tracker.get();
     CMintMeta meta;
     if (!zsc2Tracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
@@ -170,7 +170,7 @@ bool CZPivStake::MarkSpent(CWallet *pwallet, const uint256& txid)
     return true;
 }
 
-//!SC2 Stake
+//!SCN Stake
 bool CPivStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -246,7 +246,7 @@ bool CPivStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CPivStake::GetUniqueness()
 {
-    //The unique identifier for a SC2 stake is the outpoint
+    //The unique identifier for a SCN stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

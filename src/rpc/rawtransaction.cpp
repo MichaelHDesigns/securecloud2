@@ -917,7 +917,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "createrawzerocoinstake mint_input \n"
-            "\nCreates raw zSC2 coinstakes (without MN output).\n" +
+            "\nCreates raw zSCN coinstakes (without MN output).\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -938,7 +938,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zSC2 is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zSCN is currently disabled due to maintenance.");
 
     std::string serial_hash = params[0].get_str();
     if (!IsHex(serial_hash))
@@ -955,7 +955,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
 
     CMutableTransaction coinstake_tx;
 
-    // create the zerocoinmint output (one spent denom + three 1-zSC2 denom)
+    // create the zerocoinmint output (one spent denom + three 1-zSCN denom)
     libzerocoin::CoinDenomination staked_denom = input_mint.GetDenomination();
     std::vector<CTxOut> vOutMint(5);
     // Mark coin stake transaction
@@ -963,11 +963,11 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     scriptEmpty.clear();
     vOutMint[0] = CTxOut(0, scriptEmpty);
     CDeterministicMint dMint;
-    if (!pwalletMain->CreateZSC2OutPut(staked_denom, vOutMint[1], dMint))
+    if (!pwalletMain->CreateZSCNOutPut(staked_denom, vOutMint[1], dMint))
         throw JSONRPCError(RPC_WALLET_ERROR, "failed to create new zsc2 output");
 
     for (int i=2; i<5; i++) {
-        if (!pwalletMain->CreateZSC2OutPut(libzerocoin::ZQ_ONE, vOutMint[i], dMint))
+        if (!pwalletMain->CreateZSCNOutPut(libzerocoin::ZQ_ONE, vOutMint[i], dMint))
             throw JSONRPCError(RPC_WALLET_ERROR, "failed to create new zsc2 output");
     }
     coinstake_tx.vout = vOutMint;
@@ -999,7 +999,7 @@ UniValue createrawzerocoinpublicspend(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "createrawzerocoinpublicspend mint_input \n"
-            "\nCreates raw zSC2 public spend.\n" +
+            "\nCreates raw zSCN public spend.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"

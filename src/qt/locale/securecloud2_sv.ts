@@ -176,16 +176,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina SC2s från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina SCNs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA SC2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Bläddra i transaktions historiken</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Integritets funktioner för zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Integritets funktioner för zSCN</translation>
     </message>
     <message>
         <source>&amp;Governance</source>
@@ -1770,8 +1770,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Adress / Mängd:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Lägg till destination att skicka SC2 till</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Lägg till destination att skicka SCN till</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1970,36 +1970,36 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Tillåt automatisk prägling med SC2 enheter till zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Tillåt automatisk prägling med SCN enheter till zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Tillåt zSC2 Autoprägling</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Tillåt zSCN Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zSC2 minting from specific addresses</source>
-        <translation>Aktivera automatisk zSC2 prägling från specifika adresser</translation>
+        <source>Enable automatic zSCN minting from specific addresses</source>
+        <translation>Aktivera automatisk zSCN prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande SC2 som automatiskt konverteras till zSC2 via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande SCN som automatiskt konverteras till zSCN via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Procent av autopräglade zSC2</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Procent av autopräglade zSCN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många SC2 för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många SCN för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Preferens på zSC2 valör i autoprägling</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Preferens på zSCN valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2165,8 +2165,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Totalt saldo, inkluderar alla otillgängliga mynt.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 Saldo</translation>
+        <source>SCN Balance</source>
+        <translation>SCN Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2193,14 +2193,14 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Ditt nuvarande SecureCloud2 saldo, obekräftade och omogna transaktioner är inkluderade</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2 Saldo</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN Saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Mogna: över 20 bekräftelser och över 1 prägling av samma valör efter den blev myntad.
-Dessa zSC2 kan spenderas.</translation>
+Dessa zSCN kan spenderas.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2253,8 +2253,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Spenderbar:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Låsta SC2 eller masternode som säkerhet. Dessa är uteslutna från zSC2 minting.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Låsta SCN eller masternode som säkerhet. Dessa är uteslutna från zSCN minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2265,8 +2265,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Obekräftade:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Ditt nuvarande zSC2 saldo, obekräftade och omogna zSC2 inräknade.</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Ditt nuvarande zSCN saldo, obekräftade och omogna zSCN inräknade.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2277,10 +2277,10 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>osynkroniserad</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Nuvarande procent zSC2.
+        <translation>Nuvarande procent zSCN.
 Om AutoMint är tillåten så kommer denna procent att vara som den konfigurerade AutoMint procenten (standard = 10%).
 </translation>
     </message>
@@ -2424,8 +2424,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i s
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2452,12 +2452,12 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i s
         <translation>SEKRETESS</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>zSC2 Kontroll</translation>
+        <source>zSCN Control</source>
+        <translation>zSCN Kontroll</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>Valda zSC2:</translation>
+        <source>zSCN Selected:</source>
+        <translation>Valda zSCN:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2472,24 +2472,24 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i s
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Tillgängliga (mogna och spenderbara) zSC2 att spendera</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Tillgängliga (mogna och spenderbara) zSCN att spendera</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Tillgängligt Saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tillgängliga (mogna och spenderbara) zSC2 att spendera
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Tillgängliga (mogna och spenderbara) zSCN att spendera
 
-zSC2 är mogna när de har över 20 bekräftelser OCH över 2 präglingar av samma valör efter de är myntade.</translation>
+zSCN är mogna när de har över 20 bekräftelser OCH över 2 präglingar av samma valör efter de är myntade.</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2548,8 +2548,8 @@ zSC2 är mogna när de har över 20 bekräftelser OCH över 2 präglingar av sam
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Totalt Saldo, obekräftade och omogna zSC2 inkluderade</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Totalt Saldo, obekräftade och omogna zSCN inkluderade</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2570,24 +2570,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to securecloud2.conf
 - disable: add 'enablezeromint=0' to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
-        <translation>Visa den nuvarande statusen av automatisk zSC2 minting.
+        <translation>Visa den nuvarande statusen av automatisk zSCN minting.
 
 För att ändra statusen (omstart krävs):
 -aktivera: lägg till 'enablezeromint=1' i securecloud2.conf
 -inaktivera: lägg till 'enablezeromint=0' i securecloud2.conf
 
 För att ändra procenten (ingen omstart krävs):
--meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zSC2
+-meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zSCN
 
 </translation>
     </message>
@@ -2636,20 +2636,20 @@ För att ändra procenten (ingen omstart krävs):
         <translation>0 x</translation>
     </message>
     <message>
-        <source>Show zSC2 denominations list</source>
-        <translation>Visa zSC2 valör lista</translation>
+        <source>Show zSCN denominations list</source>
+        <translation>Visa zSCN valör lista</translation>
     </message>
     <message>
         <source>Show Denominations</source>
         <translation>Visa Valörer</translation>
     </message>
     <message>
-        <source>zSC2 minting is DISABLED</source>
-        <translation>zSC2 prägling är inaktiverad</translation>
+        <source>zSCN minting is DISABLED</source>
+        <translation>zSCN prägling är inaktiverad</translation>
     </message>
     <message>
-        <source>zSC2 spending is NOT private (links back to the mint transaction)</source>
-        <translation>Att spendera zSC2 är INTE privat (länkar tillbaka till den myntade transaktionen)</translation>
+        <source>zSCN spending is NOT private (links back to the mint transaction)</source>
+        <translation>Att spendera zSCN är INTE privat (länkar tillbaka till den myntade transaktionen)</translation>
     </message>
     <message>
         <source>Denominations with value 5:</source>
@@ -2782,12 +2782,12 @@ Please be patient...</source>
 Ha lite tålamod...</translation>
     </message>
     <message>
-        <source>zSC2 Spend #: </source>
-        <translation>zSC2 spendering #:</translation>
+        <source>zSCN Spend #: </source>
+        <translation>zSCN spendering #:</translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>zSC2 Prägling</translation>
+        <source>zSCN Mint</source>
+        <translation>zSCN Prägling</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2802,12 +2802,12 @@ Ha lite tålamod...</translation>
         <translation>Konfigurerat procent mål: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zSC2 is currently disabled due to maintenance.</source>
-        <translation>zSC2 är för nuvarande inaktiverat p.g.a. underhåll.</translation>
+        <source>zSCN is currently disabled due to maintenance.</source>
+        <translation>zSCN är för nuvarande inaktiverat p.g.a. underhåll.</translation>
     </message>
     <message>
-        <source>zSC2 is currently undergoing maintenance.</source>
-        <translation>zSC2 genomgår för tillfället underhåll.</translation>
+        <source>zSCN is currently undergoing maintenance.</source>
+        <translation>zSCN genomgår för tillfället underhåll.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3336,8 +3336,8 @@ Var tålmodig...</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zSC2 Backup Path:</source>
-        <translation>Vanlig zSC2 Backup Sökväg:</translation>
+        <source>Custom zSCN Backup Path:</source>
+        <translation>Vanlig zSCN Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3804,12 +3804,12 @@ Var tålmodig...</translation>
         <translation>UTXO Storlek:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 SC2 applies</source>
-        <translation>SwiftX teknologi tillåter nästan omedelbara transaktioner - En fast avgift på 0.01SC2 tillkommer</translation>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 SCN applies</source>
+        <translation>SwiftX teknologi tillåter nästan omedelbara transaktioner - En fast avgift på 0.01SCN tillkommer</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3864,12 +3864,12 @@ Var tålmodig...</translation>
         <translation>Mynt automatiskt valda</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uSC2s är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSC2s i avgift,&lt;br /&gt;medans "minst" betalar 1000 uSC2s. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uSCNs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSCNs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uSCNs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "total at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uSC2s är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSC2s i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uSC2s. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uSCNs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSCNs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uSCNs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud2 transactions than the network can process.</source>
@@ -3920,8 +3920,8 @@ Var tålmodig...</translation>
         <translation>Lägg till &amp;Mottagare</translation>
     </message>
     <message>
-        <source>Anonymized SC2</source>
-        <translation>Anonymiserade SC2</translation>
+        <source>Anonymized SCN</source>
+        <translation>Anonymiserade SCN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4580,12 +4580,12 @@ Var tålmodig...</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>SC2 Stake</source>
-        <translation>SC2 staking</translation>
+        <source>SCN Stake</source>
+        <translation>SCN staking</translation>
     </message>
     <message>
-        <source>zSC2 Stake</source>
-        <translation>zSC2 Staking</translation>
+        <source>zSCN Stake</source>
+        <translation>zSCN Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4604,32 +4604,32 @@ Var tålmodig...</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted SC2 to zSC2</source>
-        <translation>Konvertera SC2 till zSC2</translation>
+        <source>Converted SCN to zSCN</source>
+        <translation>Konvertera SCN till zSCN</translation>
     </message>
     <message>
-        <source>Spent zSC2</source>
-        <translation>Spendera zSC2</translation>
+        <source>Spent zSCN</source>
+        <translation>Spendera zSCN</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Mottog SC2 från zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Mottog SCN från zSCN</translation>
     </message>
     <message>
-        <source>Minted Change as zSC2 from zSC2 Spend</source>
-        <translation>Myntad Växel som zSC2 från zSC2 Spendering</translation>
+        <source>Minted Change as zSCN from zSCN Spend</source>
+        <translation>Myntad Växel som zSCN från zSCN Spendering</translation>
     </message>
     <message>
-        <source>Converted zSC2 to SC2</source>
-        <translation>Konverterad zSC2 till SC2</translation>
+        <source>Converted zSCN to SCN</source>
+        <translation>Konverterad zSCN till SCN</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Transaction)</source>
-        <translation>Anonym (zSC2 Transaktion)</translation>
+        <source>Anonymous (zSCN Transaction)</source>
+        <translation>Anonym (zSCN Transaktion)</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Stake)</source>
-        <translation>Anonym (zSC2 Stake)</translation>
+        <source>Anonymous (zSCN Stake)</source>
+        <translation>Anonym (zSCN Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4843,12 +4843,12 @@ Var tålmodig...</translation>
         <translation>Exportering Lyckat</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Mottog SC2 från zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Mottog SCN från zSCN</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zSC2</source>
-        <translation>Zerocoin spendera, Växel i zSC2</translation>
+        <source>Zerocoin Spend, Change in zSCN</source>
+        <translation>Zerocoin spendera, Växel i zSCN</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4884,8 +4884,8 @@ Var tålmodig...</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 SC2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 SCN.</translation>
     </message>
 </context>
 <context>
@@ -4918,8 +4918,8 @@ Var tålmodig...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zSC2 to Spend</source>
-        <translation>Välj zSC2 att Spendera</translation>
+        <source>Select zSCN to Spend</source>
+        <translation>Välj zSCN att Spendera</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4930,8 +4930,8 @@ Var tålmodig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4993,16 +4993,16 @@ Var tålmodig...</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zSC2 minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zSC2 minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zSCN minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for SC2 inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för SC2 inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for SCN inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för SCN inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zSC2 inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zSC2 inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zSCN inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zSCN inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5037,12 +5037,12 @@ Var tålmodig...</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i SC2/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i SCN/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i SC2/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i SCN/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5149,12 +5149,12 @@ Var tålmodig...</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 SC2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 SCN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 SC2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 SCN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5441,8 +5441,8 @@ Var tålmodig...</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in SC2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i SC2/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i SCN/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5545,8 +5545,8 @@ Var tålmodig...</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SC2 and zSC2 money supply statistics</source>
-        <translation>Indexera SC2 och zSC2 pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the SCN and zSCN money supply statistics</source>
+        <translation>Indexera SCN och zSCN pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5625,8 +5625,8 @@ Var tålmodig...</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zSC2 backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zSC2 backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zSCN backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6041,8 +6041,8 @@ Var tålmodig...</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zSC2 wallet...</source>
-        <translation>Synkroniserar zSC2 plånbok...</translation>
+        <source>Syncing zSCN wallet...</source>
+        <translation>Synkroniserar zSCN plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6153,8 +6153,8 @@ Var tålmodig...</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zSC2</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zSC2</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCN</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zSCN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

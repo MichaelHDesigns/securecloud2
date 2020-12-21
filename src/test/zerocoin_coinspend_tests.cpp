@@ -41,7 +41,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     string strWalletFile = "unittestwallet.dat";
     CWalletDB walletdb(strWalletFile, "cr+");
     CWallet wallet(strWalletFile);
-    CzSC2Wallet *czSC2Wallet = new CzSC2Wallet(wallet.strWalletFile);
+    CzSCNWallet *czSCNWallet = new CzSCNWallet(wallet.strWalletFile);
 
     // Get the 5 created mints.
     CoinDenomination denom = CoinDenomination::ZQ_FIFTY;
@@ -49,8 +49,8 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     for (unsigned int i = 0; i < TESTS_COINS_TO_ACCUMULATE; i++) {
         PrivateCoin coin(ZCParams, denom, false);
         CDeterministicMint dMint;
-        czSC2Wallet->GenerateDeterministicZSC2(denom, coin, dMint, true);
-        czSC2Wallet->UpdateCount();
+        czSCNWallet->GenerateDeterministicZSCN(denom, coin, dMint, true);
+        czSCNWallet->UpdateCount();
         vCoins.emplace_back(coin);
     }
 

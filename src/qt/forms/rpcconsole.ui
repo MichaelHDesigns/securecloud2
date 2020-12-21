@@ -1328,7 +1328,7 @@
        <item row="4" column="0">
         <widget class="QLabel" name="wallet_customzsc2backuppath_label">
          <property name="text">
-          <string>Custom zSC2 Backup Path:</string>
+          <string>Custom zSCN Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>

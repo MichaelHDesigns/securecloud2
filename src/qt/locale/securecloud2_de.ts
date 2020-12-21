@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie SC2 überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie SCN überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie SC2 empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie SCN empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your SecureCloud2 addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre SecureCloud2-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie SC2 überweisen.</translation>
+        <translation>Dies sind ihre SecureCloud2-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie SCN überweisen.</translation>
     </message>
     <message>
         <source>These are your SecureCloud2 addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -176,16 +176,16 @@
         <translation>Verschlüsselung der Wallet bestätigen</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer SC2s durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer SCNs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre SC2s&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre SCNs&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Transaktionsverlauf durchsuchen</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Datenschutzmaßnahmen für zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Datenschutzmaßnahmen für zSCN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1627,8 +1627,8 @@ Bitte haben Sie etwas Geduld, nachdem Sie auf Importieren geklickt haben.</trans
         <translation>Adresse / Menge:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Füge Transaktionsziele für SC2-Überweisung hinzu</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Füge Transaktionsziele für SCN-Überweisung hinzu</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1827,28 +1827,28 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Aktivieren Sie die automatische Prägung von SC2-Einheiten zu zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Aktivieren Sie die automatische Prägung von SCN-Einheiten zu zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Aktivieren Sie zSC2 Automint</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Aktivieren Sie zSCN Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden SC2, welcher automatisch zu zSC2 via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden SCN, welcher automatisch zu zSCN via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Prozentsatz der automatisierten zSC2</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Prozentsatz der automatisierten zSCN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend SC2 für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend SCN für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Bevorzugte automatisierte zSC2 Stückelung </translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Bevorzugte automatisierte zSCN Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2006,8 +2006,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Gesamtsaldo, einschließlich aller nicht verfügbaren Münzen.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 Bilanzen</translation>
+        <source>SCN Balance</source>
+        <translation>SCN Bilanzen</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2034,14 +2034,14 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Ihr aktueller SecureCloud2-Saldo, unbestätigte und unreife Transaktionen sind enthalten</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2 Bilanzen</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN Bilanzen</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Ausgereift: Mehr als 20 Bestätigungen und mehr als 1 Prägungen der selben Stückelung nach erfolgter Prägung.
-Diese zSC2 sind Verwendbar.</translation>
+Diese zSCN sind Verwendbar.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2094,8 +2094,8 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Gesperrte SC2 oder Masternode Pfand. Diese sind vom zSC2 Prägen ausgeschlossen.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Gesperrte SCN oder Masternode Pfand. Diese sind vom zSCN Prägen ausgeschlossen.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2106,8 +2106,8 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>Unbestätigt:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Ihre aktuelle zSC2-Bilanz, unbestätigte und unreife zSC2 enthalten.</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Ihre aktuelle zSCN-Bilanz, unbestätigte und unreife zSCN enthalten.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2118,10 +2118,10 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>nicht synchron</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Aktueller Prozentsatz an zSC2.
+        <translation>Aktueller Prozentsatz an zSCN.
 Falls das automatische Prägen aktiviert ist, wird sich dieser Prozentsatz um den eingestellten Prozentsatz fürs automatisierte Prägen einpendeln (Standard = 10%).
 </translation>
     </message>
@@ -2265,8 +2265,8 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2293,12 +2293,12 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>PRIVATSPHÄRE</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>zSC2 Control</translation>
+        <source>zSCN Control</source>
+        <translation>zSCN Control</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>zSC2 ausgewählt:</translation>
+        <source>zSCN Selected:</source>
+        <translation>zSCN ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2313,24 +2313,24 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Verfügbare (ausgereifte und aufwendbare) zSC2 zum Überweisen</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Verfügbare (ausgereifte und aufwendbare) zSCN zum Überweisen</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Verfügbare (ausgereifte und aufwendbare) zSC2 zum Überweisen
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Verfügbare (ausgereifte und aufwendbare) zSCN zum Überweisen
 
-zSC2 sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägungen in der selben Stückelung nach erfolgter Prägung halten.</translation>
+zSCN sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägungen in der selben Stückelung nach erfolgter Prägung halten.</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2389,8 +2389,8 @@ zSC2 sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägung
         <translation>Zerocoin Statistiken:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Totales Guthaben, einschließlich unbestätigter und unreifer zSC2</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Totales Guthaben, einschließlich unbestätigter und unreifer zSCN</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2411,24 +2411,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter Prägung</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to securecloud2.conf
 - disable: add 'enablezeromint=0' to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
-        <translation>Zeigt den aktuellen Status der automatischen zSC2-Prägung an
+        <translation>Zeigt den aktuellen Status der automatischen zSCN-Prägung an
 
 Um den Status zu ändern (Neustart erforderlich): 
 - enable: füge 'enablezeromint = 1' zu securecloud2.conf hinzu
 - disable: füge 'enablezeromint = 0' zu securecloud2.conf hinzu
 
 Um den Prozentsatz zu ändern (kein Neustart erforderlich): 
-- Menü Einstellungen-&gt; Optionen-&gt; Prozentsatz der autom. zSC2
+- Menü Einstellungen-&gt; Optionen-&gt; Prozentsatz der autom. zSCN
 </translation>
     </message>
     <message>
@@ -2602,12 +2602,12 @@ Please be patient...</source>
 Bitte haben Sie etwas Geduld...</translation>
     </message>
     <message>
-        <source>zSC2 Spend #: </source>
-        <translation>zSC2 Ausgeben #:</translation>
+        <source>zSCN Spend #: </source>
+        <translation>zSCN Ausgeben #:</translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>zSC2 Prägen</translation>
+        <source>zSCN Mint</source>
+        <translation>zSCN Prägen</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2622,12 +2622,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Konfigurierter Zielprozentsatz: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zSC2 is currently disabled due to maintenance.</source>
-        <translation>zSC2 ist aktuell deaktiviert aufgrund von Wartungsarbeiten.</translation>
+        <source>zSCN is currently disabled due to maintenance.</source>
+        <translation>zSCN ist aktuell deaktiviert aufgrund von Wartungsarbeiten.</translation>
     </message>
     <message>
-        <source>zSC2 is currently undergoing maintenance.</source>
-        <translation>zSC2 unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zSCN is currently undergoing maintenance.</source>
+        <translation>zSCN unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3072,8 +3072,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zSC2 Backup Path:</source>
-        <translation>Benutzerdefinierter zSC2 Sicherungspfad:</translation>
+        <source>Custom zSCN Backup Path:</source>
+        <translation>Benutzerdefinierter zSCN Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3445,7 +3445,7 @@ Bitte haben Sie etwas Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>SC2s überweisen</translation>
+        <translation>SCNs überweisen</translation>
     </message>
     <message>
         <source>SEND</source>
@@ -3520,8 +3520,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3576,12 +3576,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSC2s eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSC2s an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uSC2s bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSCNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSCNs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uSCNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "total at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSC2s eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSC2s an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uSC2s bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSCNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSCNs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uSCNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud2 transactions than the network can process.</source>
@@ -3632,8 +3632,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized SC2</source>
-        <translation>Anonymisierte SC2</translation>
+        <source>Anonymized SCN</source>
+        <translation>Anonymisierte SCN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4175,7 +4175,7 @@ Bitte haben Sie etwas Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte SC2s müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine SC2s gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte SCNs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine SCNs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -4276,12 +4276,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>über/durch Verschleierung empfangen</translation>
     </message>
     <message>
-        <source>SC2 Stake</source>
-        <translation>SC2 Stake</translation>
+        <source>SCN Stake</source>
+        <translation>SCN Stake</translation>
     </message>
     <message>
-        <source>zSC2 Stake</source>
-        <translation>zSC2 Stake</translation>
+        <source>zSCN Stake</source>
+        <translation>zSCN Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4300,32 +4300,32 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Verschleierung Erzeugung der Stückelung</translation>
     </message>
     <message>
-        <source>Converted SC2 to zSC2</source>
-        <translation>Umgewandeltes SC2 zu zSC2</translation>
+        <source>Converted SCN to zSCN</source>
+        <translation>Umgewandeltes SCN zu zSCN</translation>
     </message>
     <message>
-        <source>Spent zSC2</source>
-        <translation>Ausgegebene zSC2</translation>
+        <source>Spent zSCN</source>
+        <translation>Ausgegebene zSCN</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Empfangene SC2 von zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Empfangene SCN von zSCN</translation>
     </message>
     <message>
-        <source>Minted Change as zSC2 from zSC2 Spend</source>
-        <translation>Geprägtes zSC2 Wechselgeld aus zSC2 Überweisung</translation>
+        <source>Minted Change as zSCN from zSCN Spend</source>
+        <translation>Geprägtes zSCN Wechselgeld aus zSCN Überweisung</translation>
     </message>
     <message>
-        <source>Converted zSC2 to SC2</source>
-        <translation>Umgewandeltes zSC2 zu SC2</translation>
+        <source>Converted zSCN to SCN</source>
+        <translation>Umgewandeltes zSCN zu SCN</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Transaction)</source>
-        <translation>Anonym (zSC2 Transaktion)</translation>
+        <source>Anonymous (zSCN Transaction)</source>
+        <translation>Anonym (zSCN Transaktion)</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Stake)</source>
-        <translation>Anonym (zSC2 Stake)</translation>
+        <source>Anonymous (zSCN Stake)</source>
+        <translation>Anonym (zSCN Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4535,12 +4535,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Exportieren erfolgreich</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Empfangene SC2 von zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Empfangene SCN von zSCN</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zSC2</source>
-        <translation>Zerocoin Überweisung, Wechselgeld in zSC2</translation>
+        <source>Zerocoin Spend, Change in zSCN</source>
+        <translation>Zerocoin Überweisung, Wechselgeld in zSCN</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4573,11 +4573,11 @@ Bitte haben Sie etwas Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>SC2s überweisen</translation>
+        <translation>SCNs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 SC2 begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 SCN begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4610,8 +4610,8 @@ Bitte haben Sie etwas Geduld...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zSC2 to Spend</source>
-        <translation>Wählen Sie die zSC2 aus, die Sie ausgeben möchten</translation>
+        <source>Select zSCN to Spend</source>
+        <translation>Wählen Sie die zSCN aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4622,8 +4622,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4685,16 +4685,16 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zSC2 minting (0-1, default: %u)</source>
-        <translation>Aktiviere nach jeder zSC2-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)</source>
+        <translation>Aktiviere nach jeder zSCN-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for SC2 inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für SC2 Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for SCN inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für SCN Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zSC2 inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zSC2 Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zSCN inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zSCN Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4729,12 +4729,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in SC2/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in SCN/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in SC2/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in SCN/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4837,12 +4837,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 SC2 entsprechen.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 SCN entsprechen.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 SC2 entsprechen.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 SCN entsprechen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5125,8 +5125,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in SC2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in SC2/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in SCN/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5229,8 +5229,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Prozent automatisch geprägter Zerocoins (1-100, Standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SC2 and zSC2 money supply statistics</source>
-        <translation>Die Geldmengenstatistik SC2 und zSC2 neu indizieren</translation>
+        <source>Reindex the SCN and zSCN money supply statistics</source>
+        <translation>Die Geldmengenstatistik SCN und zSCN neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5305,8 +5305,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zSC2 backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zSC2-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zSCN-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5717,8 +5717,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zSC2 wallet...</source>
-        <translation>Synchronisiere zSC2 Wallet... </translation>
+        <source>Syncing zSCN wallet...</source>
+        <translation>Synchronisiere zSCN Wallet... </translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5825,8 +5825,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zSC2</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zSC2</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCN</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zSCN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

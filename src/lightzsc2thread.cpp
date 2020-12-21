@@ -8,7 +8,7 @@
 #include "main.h"
 
 /****** Thread ********/
-void CLightWorker::ThreadLightZSC2Simplified() {
+void CLightWorker::ThreadLightZSCNSimplified() {
     RenameThread("securecloud2-light-thread");
     isWorkerRunning = true;
     while (true) {
@@ -60,7 +60,7 @@ void CLightWorker::ThreadLightZSC2Simplified() {
                         );
 
                     } catch (NotEnoughMintsException e) {
-                        LogPrintStr(std::string("ThreadLightZSC2Simplified: ") + e.message + "\n");
+                        LogPrintStr(std::string("ThreadLightZSCNSimplified: ") + e.message + "\n");
                         rejectWork(genWit, blockHeight, NOT_ENOUGH_MINTS);
                         continue;
                     }

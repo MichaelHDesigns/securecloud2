@@ -172,16 +172,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše SC2y před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše SCNy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE SC2y&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE SCNy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -397,8 +397,8 @@
         <translation>Procházet historii transakcí</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Řešení soukromí pro zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Řešení soukromí pro zSCN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -2016,8 +2016,8 @@ MultiSend: %1</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>

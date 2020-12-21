@@ -176,16 +176,16 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus SC2s frente a malware que infecte su ordenador.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus SCNs frente a malware que infecte su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que quiere encriptar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS SC2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>

@@ -34,7 +34,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SC2)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SCN)
     {
     }
 
@@ -146,7 +146,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sSC2Percentage, QString& szSC2Percentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sSCNPercentage, QString& szSCNPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -165,8 +165,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
 
-    szSC2Percentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sSC2Percentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szSCNPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sSCNPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -191,16 +191,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // SC2 Balance
+    // SCN Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount sc2AvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // SC2 Watch-Only Balance
+    // SCN Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // zSC2 Balance
+    // zSCN Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Percentages
@@ -211,7 +211,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = sc2AvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // SC2 labels
+    // SCN labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sc2AvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -225,7 +225,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zSC2 labels
+    // zSCN labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -236,11 +236,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelSC2Percent->setText(sPercentage);
-    ui->labelzSC2Percent->setText(szPercentage);
+    ui->labelSCNPercent->setText(sPercentage);
+    ui->labelzSCNPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zSC2.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zSCN.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
@@ -261,49 +261,49 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // SC2 Available
-    bool showSC2Available = settingShowAllBalances || sc2AvailableBalance != nTotalBalance;
-    bool showWatchOnlySC2Available = showSC2Available || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showSC2Available || showWatchOnlySC2Available);
-    ui->labelBalance->setVisible(showSC2Available || showWatchOnlySC2Available);
-    ui->labelWatchAvailable->setVisible(showWatchOnlySC2Available && showWatchOnly);
+    // SCN Available
+    bool showSCNAvailable = settingShowAllBalances || sc2AvailableBalance != nTotalBalance;
+    bool showWatchOnlySCNAvailable = showSCNAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
+    ui->labelBalance->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlySCNAvailable && showWatchOnly);
 
-    // SC2 Pending
-    bool showSC2Pending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlySC2Pending = showSC2Pending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showSC2Pending || showWatchOnlySC2Pending);
-    ui->labelUnconfirmed->setVisible(showSC2Pending || showWatchOnlySC2Pending);
-    ui->labelWatchPending->setVisible(showWatchOnlySC2Pending && showWatchOnly);
+    // SCN Pending
+    bool showSCNPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlySCNPending = showSCNPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showSCNPending || showWatchOnlySCNPending);
+    ui->labelUnconfirmed->setVisible(showSCNPending || showWatchOnlySCNPending);
+    ui->labelWatchPending->setVisible(showWatchOnlySCNPending && showWatchOnly);
 
-    // SC2 Immature
-    bool showSC2Immature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showSC2Immature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showSC2Immature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showSC2Immature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // SCN Immature
+    bool showSCNImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showSCNImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showSCNImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showSCNImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // SC2 Locked
-    bool showSC2Locked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlySC2Locked = showSC2Locked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showSC2Locked || showWatchOnlySC2Locked);
-    ui->labelLockedBalance->setVisible(showSC2Locked || showWatchOnlySC2Locked);
-    ui->labelWatchLocked->setVisible(showWatchOnlySC2Locked && showWatchOnly);
+    // SCN Locked
+    bool showSCNLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlySCNLocked = showSCNLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showSCNLocked || showWatchOnlySCNLocked);
+    ui->labelLockedBalance->setVisible(showSCNLocked || showWatchOnlySCNLocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlySCNLocked && showWatchOnly);
 
-    // zSC2
-    bool showzSC2Available = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzSC2Unconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzSC2Immature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzSC2Available);
-    ui->labelzBalanceMatureText->setVisible(showzSC2Available);
-    ui->labelzBalanceUnconfirmed->setVisible(showzSC2Unconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzSC2Unconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzSC2Immature);
-    ui->labelzBalanceImmatureText->setVisible(showzSC2Immature);
+    // zSCN
+    bool showzSCNAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzSCNUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzSCNImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzSCNAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzSCNAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzSCNUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzSCNUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzSCNImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzSCNImmature);
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelSC2Percent->setVisible(showPercentages);
-    ui->labelzSC2Percent->setVisible(showPercentages);
+    ui->labelSCNPercent->setVisible(showPercentages);
+    ui->labelzSCNPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("SC2")
+    // update the display unit, to not use the default ("SCN")
     updateDisplayUnit();
 
     // Hide orphans

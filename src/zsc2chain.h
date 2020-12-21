@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SecureCloud2_ZSC2CHAIN_H
-#define SecureCloud2_ZSC2CHAIN_H
+#ifndef SecureCloud2_ZSCNCHAIN_H
+#define SecureCloud2_ZSCNCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //SecureCloud2_ZSC2CHAIN_H
+#endif //SecureCloud2_ZSCNCHAIN_H

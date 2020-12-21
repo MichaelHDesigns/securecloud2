@@ -60,7 +60,7 @@ CoinDenomination AmountToZerocoinDenomination(CAmount amount)
 }
 
 // return the highest denomination that is less than or equal to the amount given
-// use case: converting SC2 to zSC2 without user worrying about denomination math themselves
+// use case: converting SCN to zSCN without user worrying about denomination math themselves
 CoinDenomination AmountToClosestDenomination(CAmount nAmount, CAmount& nRemaining)
 {
     if (nAmount < 1 * COIN)

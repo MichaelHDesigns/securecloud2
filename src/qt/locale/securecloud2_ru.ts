@@ -176,7 +176,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
         <translation>SecureCloud2 сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши SecureCloud2 от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ SC2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,7 +433,7 @@
         <translation>Просмотр истории транзакций</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
+        <source>Privacy Actions for zSCN</source>
         <translation>Действия конфиденциальности для зпив</translation>
     </message>
     <message>
@@ -1632,8 +1632,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес/ Сумма:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Добавить назначение куда отправить SC2</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Добавить назначение куда отправить SCN</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1832,28 +1832,28 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Невозможно автоматически отчеканить единицы SC2 для zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Невозможно автоматически отчеканить единицы SCN для zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Невозможно авточеканка  zSC2</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Невозможно авточеканка  zSCN</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих SC2, которые автоматически конвертируются в zSC2 благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих SCN, которые автоматически конвертируются в zSCN благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Процент  авточеканненых zSC2</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Процент  авточеканненых zSCN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно SC2 для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно SCN для этой номинации.</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zSC2</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zSCN</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2011,8 +2011,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Общий баланс включая все не доступные монеты</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>Баланс SC2</translation>
+        <source>SCN Balance</source>
+        <translation>Баланс SCN</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2039,13 +2039,13 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Ваш текущий SecureCloud2  баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>Баланс zSC2</translation>
+        <source>zSCN Balance</source>
+        <translation>Баланс zSCN</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
-        <translation>Зрелые: более 20 подтверждений и более 1 чеканки одного и того же наименования после того, как оно было отчеканено. Эти zSC2 можно потратить.</translation>
+These zSCN are spendable.</source>
+        <translation>Зрелые: более 20 подтверждений и более 1 чеканки одного и того же наименования после того, как оно было отчеканено. Эти zSCN можно потратить.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2098,8 +2098,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Заблокированно дополнительное обеспечение SC2 или Masternode. Они исключены из чеканки zSC2.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Заблокированно дополнительное обеспечение SCN или Masternode. Они исключены из чеканки zSCN.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2110,8 +2110,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Неподтвержденный:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Ваш текущий zSC2 баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Ваш текущий zSCN баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2122,10 +2122,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>несинронизировано</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Текущий процент от zSC2.
+        <translation>Текущий процент от zSCN.
 Если АвтоЧеканка включена, этот процент будет располагаться на настроенном проценте АвтоЧеканка  (по умолчанию = 10%).
 </translation>
     </message>
@@ -2269,8 +2269,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2297,12 +2297,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>КОНФИДЕНЦИАЛЬНОСТЬ</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>Контроль zSC2</translation>
+        <source>zSCN Control</source>
+        <translation>Контроль zSCN</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>Выбрано zSC2:</translation>
+        <source>zSCN Selected:</source>
+        <translation>Выбрано zSCN:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2317,24 +2317,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>Потратить Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Доступный (зрелый и расходуемый) zSC2 для расходов</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Доступный (зрелый и расходуемый) zSCN для расходов</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Доступный Баланс :</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Доступный (зрелый и затратный) zSC2 для расходов
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Доступный (зрелый и затратный) zSCN для расходов
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2393,8 +2393,8 @@ zSC2 are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Общий баланс, включая неподтвержденные и незрелые zSC2</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Общий баланс, включая неподтвержденные и незрелые zSCN</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2415,24 +2415,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to securecloud2.conf
 - disable: add 'enablezeromint=0' to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
-        <translation>Показать текущий статус автоматической чеканки zSC2.
+        <translation>Показать текущий статус автоматической чеканки zSCN.
 
 Чтобы изменить статус (требуется перезагрузка):
 - включить: добавить 'enablezeromint = 1' в securecloud2.conf
 - отключить: добавить 'enablezeromint = 0' в securecloud2.conf
 
 Чтобы изменить процент (не требуется перезагрузка):
-- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zSC2</translation>
+- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zSCN</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2605,12 +2605,12 @@ Please be patient...</source>
 Будьте терпеливы ...</translation>
     </message>
     <message>
-        <source>zSC2 Spend #: </source>
-        <translation>zSC2 Тратить #: </translation>
+        <source>zSCN Spend #: </source>
+        <translation>zSCN Тратить #: </translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>чеканка zSC2</translation>
+        <source>zSCN Mint</source>
+        <translation>чеканка zSCN</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2625,12 +2625,12 @@ Please be patient...</source>
         <translation> Настроенный целевой процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zSC2 is currently disabled due to maintenance.</source>
-        <translation>zSC2 в настоящее время отключен от обслуживания.</translation>
+        <source>zSCN is currently disabled due to maintenance.</source>
+        <translation>zSCN в настоящее время отключен от обслуживания.</translation>
     </message>
     <message>
-        <source>zSC2 is currently undergoing maintenance.</source>
-        <translation>В настоящее время zSC2 проходит техническое обслуживание.</translation>
+        <source>zSCN is currently undergoing maintenance.</source>
+        <translation>В настоящее время zSCN проходит техническое обслуживание.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3075,8 +3075,8 @@ Please be patient...</source>
         <translation>Пользовательский путь резервного копирования:</translation>
     </message>
     <message>
-        <source>Custom zSC2 Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zSC2:</translation>
+        <source>Custom zSCN Backup Path:</source>
+        <translation>Пользовательский путь резервного копирования zSCN:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3524,8 +3524,8 @@ Please be patient...</source>
         <translation>UTXO Размер:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3580,12 +3580,12 @@ Please be patient...</source>
         <translation>Монеты автоматически выбираются</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uSC2s, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSC2s,&lt;br /&gt;а «по крайней мере» платит 1000 uSC2. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uSCNs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSCNs,&lt;br /&gt;а «по крайней мере» платит 1000 uSCN. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "total at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uSC2s, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSC2s,&lt;br /&gt;а «по крайней мере» платит 1000 uSC2. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uSCNs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uSCNs,&lt;br /&gt;а «по крайней мере» платит 1000 uSCN. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud2 transactions than the network can process.</source>
@@ -3636,8 +3636,8 @@ Please be patient...</source>
         <translation>Добавить &amp;Получателя</translation>
     </message>
     <message>
-        <source>Anonymized SC2</source>
-        <translation>Анонимный SC2</translation>
+        <source>Anonymized SCN</source>
+        <translation>Анонимный SCN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4280,12 +4280,12 @@ Please be patient...</source>
         <translation>Получено через обфускацию</translation>
     </message>
     <message>
-        <source>SC2 Stake</source>
-        <translation>Доля SC2</translation>
+        <source>SCN Stake</source>
+        <translation>Доля SCN</translation>
     </message>
     <message>
-        <source>zSC2 Stake</source>
-        <translation>Доля zSC2</translation>
+        <source>zSCN Stake</source>
+        <translation>Доля zSCN</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4304,32 +4304,32 @@ Please be patient...</source>
         <translation>Обфускация Создание конфессий</translation>
     </message>
     <message>
-        <source>Converted SC2 to zSC2</source>
-        <translation>Преобразованный SC2 в zSC2</translation>
+        <source>Converted SCN to zSCN</source>
+        <translation>Преобразованный SCN в zSCN</translation>
     </message>
     <message>
-        <source>Spent zSC2</source>
-        <translation>потраченный zSC2</translation>
+        <source>Spent zSCN</source>
+        <translation>потраченный zSCN</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Полученный SC2 от zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Полученный SCN от zSCN</translation>
     </message>
     <message>
-        <source>Minted Change as zSC2 from zSC2 Spend</source>
-        <translation>созданная  замена  zSC2 из потраенного zSC2 </translation>
+        <source>Minted Change as zSCN from zSCN Spend</source>
+        <translation>созданная  замена  zSCN из потраенного zSCN </translation>
     </message>
     <message>
-        <source>Converted zSC2 to SC2</source>
-        <translation>Преобразованный zSC2 to SC2</translation>
+        <source>Converted zSCN to SCN</source>
+        <translation>Преобразованный zSCN to SCN</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Transaction)</source>
-        <translation>Анонимный (транзакция zSC2)</translation>
+        <source>Anonymous (zSCN Transaction)</source>
+        <translation>Анонимный (транзакция zSCN)</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Stake)</source>
-        <translation>Анонимный (ставка zSC2)</translation>
+        <source>Anonymous (zSCN Stake)</source>
+        <translation>Анонимный (ставка zSCN)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4539,12 +4539,12 @@ Please be patient...</source>
         <translation>Экспортирование произошло успешно</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Полученный SC2 от zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Полученный SCN от zSCN</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zSC2</source>
-        <translation>Потратить Zerocoin, Преобразовать в zSC2</translation>
+        <source>Zerocoin Spend, Change in zSCN</source>
+        <translation>Потратить Zerocoin, Преобразовать в zSCN</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4580,8 +4580,8 @@ Please be patient...</source>
         <translation>Отправить Монеты</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
-        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 SC2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 SCN.</translation>
     </message>
 </context>
 <context>
@@ -4614,8 +4614,8 @@ Please be patient...</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zSC2 to Spend</source>
-        <translation>Выберите zSC2 чтобы потратить</translation>
+        <source>Select zSCN to Spend</source>
+        <translation>Выберите zSCN чтобы потратить</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4626,8 +4626,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4689,16 +4689,16 @@ Please be patient...</source>
         <translation>Распространяется по лицензии программного обеспечения MIT, см. Сопроводительный файл COPYING или &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zSC2 minting (0-1, default: %u)</source>
-        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zSC2 (0-1, по умолчанию: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)</source>
+        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zSCN (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for SC2 inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов SC2 (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for SCN inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов SCN (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zSC2 inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов zSC2 (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for zSCN inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов zSCN (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4733,12 +4733,12 @@ Please be patient...</source>
         <translation>Выполнить команду, когда лучший блок изменяется (%s в cmd заменяется блочным хэшем)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Тарифы (в SC2 / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Тарифы (в SCN / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Плата (в SC2 / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Плата (в SCN / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4841,12 +4841,12 @@ Please be patient...</source>
         <translation>Не удалось найти достаточное количество средств, предназначенных для обфускации, для этой транзакции.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 SC2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 SCN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 SC2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 SCN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5129,8 +5129,8 @@ Please be patient...</source>
         <translation>Не удалось прочитать блок</translation>
     </message>
     <message>
-        <source>Fee (in SC2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Плата (в SC2 / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
+        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Плата (в SCN / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5233,8 +5233,8 @@ Please be patient...</source>
         <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SC2 and zSC2 money supply statistics</source>
-        <translation>Reindex статистика денежной массы SC2 и zSC2</translation>
+        <source>Reindex the SCN and zSCN money supply statistics</source>
+        <translation>Reindex статистика денежной массы SCN и zSCN</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5309,8 +5309,8 @@ Please be patient...</source>
         <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin (1/5/10/50/100/500/1000/5000), 0 без предпочтений. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zSC2 backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zSC2. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zSCN. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5721,8 +5721,8 @@ Please be patient...</source>
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing zSC2 wallet...</source>
-        <translation>Синхронизация zSC2 кошелька ...</translation>
+        <source>Syncing zSCN wallet...</source>
+        <translation>Синхронизация zSCN кошелька ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5829,7 +5829,7 @@ Please be patient...</source>
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zSC2</source>
+        <source>Value is below the smallest available denomination (= 1) of zSCN</source>
         <translation>Значение ниже наименьшего доступного номинала (= 1) zPiv</translation>
     </message>
     <message>

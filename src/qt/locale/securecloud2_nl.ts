@@ -176,16 +176,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SC2's kunnen stelen.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SCN's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW SC2 VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW SCN VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Blader door transactiegescheidenis</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Privacy Acties voor zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Privacy Acties voor zSCN</translation>
     </message>
     <message>
         <source>&amp;Governance</source>
@@ -1734,8 +1734,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Adres / Bedrag:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Voeg bestemmingen toe om SC2 naar te verzenden</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Voeg bestemmingen toe om SCN naar te verzenden</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1934,32 +1934,32 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Schakel automatisch slaan van SC2-eenheden in op zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Schakel automatisch slaan van SCN-eenheden in op zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Schakel zSC2 Automint in</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Schakel zSCN Automint in</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende SC2 die automatisch wordt omgezet naar zSC2 via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende SCN die automatisch wordt omgezet naar zSCN via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Percentage autominted zSC2</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Percentage autominted zSCN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg SC2 voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg SCN voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Gewenste Automint zSC2 denominatie</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Gewenste Automint zSCN denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2125,8 +2125,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 Saldi</translation>
+        <source>SCN Balance</source>
+        <translation>SCN Saldi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2153,12 +2153,12 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Uw huidige SecureCloud2-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2-saldo</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN-saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
 Deze zPIB zijn besteedbaar.</translation>
     </message>
@@ -2213,8 +2213,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Vergrendelde SC2 of Masternode onderpanden. Deze zijn uitgesloten van de zSC2 muntage.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Vergrendelde SCN of Masternode onderpanden. Deze zijn uitgesloten van de zSCN muntage.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2225,8 +2225,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Onbevestigd:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Uw huidige zSC2-saldo, onbevestigde en onvolgroeide zSC2 inbegrepen.</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Uw huidige zSCN-saldo, onbevestigde en onvolgroeide zSCN inbegrepen.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2237,10 +2237,10 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>niet gesynchroniseerd</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Huidige percentage van zSC2
+        <translation>Huidige percentage van zSCN
 Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
 </translation>
     </message>
@@ -2384,8 +2384,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2412,12 +2412,12 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>zSC2 Control</translation>
+        <source>zSCN Control</source>
+        <translation>zSCN Control</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>zSC2 geselecteerd:</translation>
+        <source>zSCN Selected:</source>
+        <translation>zSCN geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2432,24 +2432,24 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Beschikbare (volwassen en uitgeefbaar) zSC2 voor besteding</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Beschikbare (volwassen en uitgeefbaar) zSCN voor besteding</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Beschikbare (volwwassen en uitgeefbaar) zSC2 voor besteding
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Beschikbare (volwwassen en uitgeefbaar) zSCN voor besteding
 
 zPiv zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2508,8 +2508,8 @@ zPiv zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
         <translation>Zerocoin Statistieken:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zSC2</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zSCN</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2530,24 +2530,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to securecloud2.conf
 - disable: add 'enablezeromint=0' to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
-        <translation>Toon de huidige status van automatische zSC2-markering.
+        <translation>Toon de huidige status van automatische zSCN-markering.
 
 Om de status te wijzigen (opnieuw opstarten vereist): 
 - enable: voeg 'enablezeromint = 1' toe aan securecloud2.conf
 - uitschakelen: voeg 'enablezeromint = 0' toe aan securecloud2.conf
 
 Om het percentage te wijzigen (geen herstart vereist): 
-- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zSC2
+- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zSCN
 </translation>
     </message>
     <message>
@@ -2595,8 +2595,8 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation> 0 x</translation>
     </message>
     <message>
-        <source>Show zSC2 denominations list</source>
-        <translation>Toon zSC2 denominatielijst</translation>
+        <source>Show zSCN denominations list</source>
+        <translation>Toon zSCN denominatielijst</translation>
     </message>
     <message>
         <source>Show Denominations</source>
@@ -2733,12 +2733,12 @@ Please be patient...</source>
 Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
-        <source>zSC2 Spend #: </source>
-        <translation>zSC2 besteed #:</translation>
+        <source>zSCN Spend #: </source>
+        <translation>zSCN besteed #:</translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>zSC2 mint</translation>
+        <source>zSCN Mint</source>
+        <translation>zSCN mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2753,12 +2753,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
     </message>
     <message>
-        <source>zSC2 is currently disabled due to maintenance.</source>
-        <translation>zSC2 is momenteel uitgeschakeld vanwege onderhoud.</translation>
+        <source>zSCN is currently disabled due to maintenance.</source>
+        <translation>zSCN is momenteel uitgeschakeld vanwege onderhoud.</translation>
     </message>
     <message>
-        <source>zSC2 is currently undergoing maintenance.</source>
-        <translation>zSC2 wordt momenteel onderhouden.</translation>
+        <source>zSCN is currently undergoing maintenance.</source>
+        <translation>zSCN wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3255,8 +3255,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zSC2 Backup Path:</source>
-        <translation>Aangepast zSC2 back-up pad:</translation>
+        <source>Custom zSCN Backup Path:</source>
+        <translation>Aangepast zSCN back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3715,8 +3715,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>UTXO grootte:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3771,12 +3771,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSC2s en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uSC2's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uSC2's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSCNs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uSCN's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uSCN's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "total at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSC2s en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uSC2's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uSC2's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSCNs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uSCN's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uSCN's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud2 transactions than the network can process.</source>
@@ -3827,8 +3827,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Voeg &amp;ontvanger toe</translation>
     </message>
     <message>
-        <source>Anonymized SC2</source>
-        <translation>Geanonimiseerde SC2</translation>
+        <source>Anonymized SCN</source>
+        <translation>Geanonimiseerde SCN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4471,12 +4471,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>SC2 Stake</source>
-        <translation>SC2 Stake</translation>
+        <source>SCN Stake</source>
+        <translation>SCN Stake</translation>
     </message>
     <message>
-        <source>zSC2 Stake</source>
-        <translation>zSC2 Stake</translation>
+        <source>zSCN Stake</source>
+        <translation>zSCN Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4495,32 +4495,32 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted SC2 to zSC2</source>
-        <translation>Geconverteerde SC2 naar zSC2</translation>
+        <source>Converted SCN to zSCN</source>
+        <translation>Geconverteerde SCN naar zSCN</translation>
     </message>
     <message>
-        <source>Spent zSC2</source>
-        <translation>Bestede zSC2</translation>
+        <source>Spent zSCN</source>
+        <translation>Bestede zSCN</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Ontvangen SC2 van zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Ontvangen SCN van zSCN</translation>
     </message>
     <message>
-        <source>Minted Change as zSC2 from zSC2 Spend</source>
-        <translation>Gemint wisselgeld als zSC2 van bestede zSC2</translation>
+        <source>Minted Change as zSCN from zSCN Spend</source>
+        <translation>Gemint wisselgeld als zSCN van bestede zSCN</translation>
     </message>
     <message>
-        <source>Converted zSC2 to SC2</source>
-        <translation>Geconverteerde zSC2 naar SC2</translation>
+        <source>Converted zSCN to SCN</source>
+        <translation>Geconverteerde zSCN naar SCN</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Transaction)</source>
-        <translation>Anonieme (zSC2 transactie)</translation>
+        <source>Anonymous (zSCN Transaction)</source>
+        <translation>Anonieme (zSCN transactie)</translation>
     </message>
     <message>
-        <source>Anonymous (zSC2 Stake)</source>
-        <translation>Anonieme (zSC2 stake)</translation>
+        <source>Anonymous (zSCN Stake)</source>
+        <translation>Anonieme (zSCN stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4734,12 +4734,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
-        <source>Received SC2 from zSC2</source>
-        <translation>Ontvangen SC2 van zSC2</translation>
+        <source>Received SCN from zSCN</source>
+        <translation>Ontvangen SCN van zSCN</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zSC2</source>
-        <translation>Zerocoin besteed, wisselgeld in zSC2</translation>
+        <source>Zerocoin Spend, Change in zSCN</source>
+        <translation>Zerocoin besteed, wisselgeld in zSCN</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4775,8 +4775,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 SC2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 SCN.</translation>
     </message>
 </context>
 <context>
@@ -4809,8 +4809,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zSC2 to Spend</source>
-        <translation>Selecteer zSC2 om te besteden</translation>
+        <source>Select zSCN to Spend</source>
+        <translation>Selecteer zSCN om te besteden</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4821,8 +4821,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4888,16 +4888,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zSC2 minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zSC2 (0-1, standaard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zSCN (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for SC2 inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor SC2 inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for SCN inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor SCN inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zSC2 inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zSC2 inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for zSCN inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zSCN inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4932,12 +4932,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in SC2/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in SCN/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in SC2/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in SCN/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5040,12 +5040,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SC2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SCN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SC2.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SC2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SCN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5332,8 +5332,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in SC2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in SC2/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in SCN/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5436,8 +5436,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SC2 and zSC2 money supply statistics</source>
-        <translation>Indexeer de SC2- en zSC2-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the SCN and zSCN money supply statistics</source>
+        <translation>Indexeer de SCN- en zSCN-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5512,8 +5512,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zSC2 backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zSC2 back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zSCN back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5924,8 +5924,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zSC2 wallet...</source>
-        <translation>Synchroniseren zSC2 portemonnee...</translation>
+        <source>Syncing zSCN wallet...</source>
+        <translation>Synchroniseren zSCN portemonnee...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6036,8 +6036,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zSC2</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zSC2</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCN</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zSCN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

@@ -176,15 +176,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn SC2s de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn SCNs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>&amp;Foliumi transakcio historio</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Privataj agoj por zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Privataj agoj por zSCN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1514,8 +1514,8 @@ Muktisendi: %1</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Aldonu destinoj por sendi SC2 al</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Aldonu destinoj por sendi SCN al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1705,8 +1705,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 kvanto</translation>
+        <source>SCN Balance</source>
+        <translation>SCN kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1717,8 +1717,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Via aktuala SecureCloud2 totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2 kvanto</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN kvanto</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -1788,20 +1788,20 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Restarigi</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>zSC2 kontrolu</translation>
+        <source>zSCN Control</source>
+        <translation>zSCN kontrolu</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>Elektita zSC2</translation>
+        <source>zSCN Selected:</source>
+        <translation>Elektita zSCN</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1812,12 +1812,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Elspezi zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Havebla (matura kaj elspezebla) zSC2 por elspezi</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Havebla (matura kaj elspezebla) zSCN por elspezi</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2194,8 +2194,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2270,7 +2270,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The SecureCloud2 address to send the payment to</source>
-        <translation>SC2C adreso por sendi la pago al</translation>
+        <translation>SCNC adreso por sendi la pago al</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2552,8 +2552,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     </context>
 <context>

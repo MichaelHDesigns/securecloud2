@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, SC2'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, SCN'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Gizlilik Aksiyonları zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Gizlilik Aksiyonları zSCN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1663,8 +1663,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>SC2 göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>SCN göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1863,28 +1863,28 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>SC2 birimlerinin zSC2'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>SCN birimlerinin zSCN'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>zSC2 Otomatik basımı etkinleştir</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>zSCN Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zSC2'ye dönüştürülen gelen SC2 yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zSCN'ye dönüştürülen gelen SCN yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Otomatikleştirilmiş zSC2 yüzdesi</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Otomatikleştirilmiş zSCN yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli SC2 bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli SCN bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Tercih edilen Automint zSC2 Nominal değeri</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Tercih edilen Automint zSCN Nominal değeri</translation>
     </message>
     <message>
         <source>Connect to the SecureCloud2 network through a SOCKS5 proxy.</source>
@@ -2038,8 +2038,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 Bakiyesi</translation>
+        <source>SCN Balance</source>
+        <translation>SCN Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2066,14 +2066,14 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Güncel SecureCloud2 bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2 Bakiyesi</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN Bakiyesi</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Olgun: basılmış olduktan sonra 20'den fazla onay alınmış ve aynı ölçü biriminden 1 kereden fazla basılmış.
-Bu zSC2 ler harcanabilir.</translation>
+Bu zSCN ler harcanabilir.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2126,8 +2126,8 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Kilitli SC2 veya Masternode teminatları. Bunlar zSC2 matlaştırmadan çıkarılır.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Kilitli SCN veya Masternode teminatları. Bunlar zSCN matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2138,8 +2138,8 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Güncel zSC2 bakiyeniz, onaylanmamış ve olgunlaşmamış zSC2'ler dahil.</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Güncel zSCN bakiyeniz, onaylanmamış ve olgunlaşmamış zSCN'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2150,10 +2150,10 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut zSC2 yüzdesi.
+        <translation>Mevcut zSCN yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2297,8 +2297,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2325,11 +2325,11 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>GİZLİLİK</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>zSC2 Kontrolü</translation>
+        <source>zSCN Control</source>
+        <translation>zSCN Kontrolü</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
+        <source>zSCN Selected:</source>
         <translation>zPiv Seçildi:</translation>
     </message>
     <message>
@@ -2345,24 +2345,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in secureclou
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zSC2</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zSCN</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zSC2
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zSCN
 
-zSC2, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+zSCN, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2421,8 +2421,8 @@ zSC2, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış zSC2 dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış zSCN dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2581,12 +2581,12 @@ Please be patient...</source>
 Lütfen sabırlı olun...</translation>
     </message>
     <message>
-        <source>zSC2 is currently disabled due to maintenance.</source>
-        <translation>zSC2 bakım nedeniyle şu an kullanıma kapalı.</translation>
+        <source>zSCN is currently disabled due to maintenance.</source>
+        <translation>zSCN bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>zSC2 is currently undergoing maintenance.</source>
-        <translation>zSC2 halen bakım alıyor.</translation>
+        <source>zSCN is currently undergoing maintenance.</source>
+        <translation>zSCN halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -3331,8 +3331,8 @@ Lütfen sabırlı olun...</translation>
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3387,12 +3387,12 @@ Lütfen sabırlı olun...</translation>
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uSC2 olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uSC2 öder,&lt;br /&gt;"en az" ise 1000 uSC2 öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uSCN olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uSCN öder,&lt;br /&gt;"en az" ise 1000 uSCN öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSC2s in fee,&lt;br /&gt;while "total at least" pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uSC2 olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uSC2 ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uSC2 ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCNs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uSCN olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uSCN ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uSCN ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SecureCloud2 transactions than the network can process.</source>
@@ -3443,8 +3443,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized SC2</source>
-        <translation>anonim edilmiş SC2</translation>
+        <source>Anonymized SCN</source>
+        <translation>anonim edilmiş SCN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4339,8 +4339,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 SC2 ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 SCN ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4377,8 +4377,8 @@ Lütfen sabırlı olun...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4464,12 +4464,12 @@ Lütfen sabırlı olun...</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (SC2 / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (SCN / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (SC2 / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (SCN / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

@@ -651,7 +651,7 @@ EOF
 		    case "$sc_cpu_version" in
 		      523) HP_ARCH=hppa1.0 ;; # CPU_PA_RISC1_0
 		      528) HP_ARCH=hppa1.1 ;; # CPU_PA_RISC1_1
-		      532)                      # CPU_PA_RISC2_0
+		      532)                      # CPU_PA_RISCN_0
 			case "$sc_kernel_bits" in
 			  32) HP_ARCH=hppa2.0n ;;
 			  64) HP_ARCH=hppa2.0w ;;
@@ -678,7 +678,7 @@ EOF
 			{
 			case CPU_PA_RISC1_0: puts ("hppa1.0"); break;
 			case CPU_PA_RISC1_1: puts ("hppa1.1"); break;
-			case CPU_PA_RISC2_0:
+			case CPU_PA_RISCN_0:
 		#if defined(_SC_KERNEL_BITS)
 			    switch (bits)
 				{
@@ -742,7 +742,7 @@ EOF
 		{
 		  case CPU_PA_RISC1_0: puts ("hppa1.0-hitachi-hiuxwe2"); break;
 		  case CPU_PA_RISC1_1: puts ("hppa1.1-hitachi-hiuxwe2"); break;
-		  case CPU_PA_RISC2_0: puts ("hppa2.0-hitachi-hiuxwe2"); break;
+		  case CPU_PA_RISCN_0: puts ("hppa2.0-hitachi-hiuxwe2"); break;
 		  default: puts ("hppa-hitachi-hiuxwe2"); break;
 		}
 	    }

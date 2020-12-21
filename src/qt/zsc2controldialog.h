@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZSC2CONTROLDIALOG_H
-#define ZSC2CONTROLDIALOG_H
+#ifndef ZSCNCONTROLDIALOG_H
+#define ZSCNCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -65,4 +65,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZSC2CONTROLDIALOG_H
+#endif // ZSCNCONTROLDIALOG_H

@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -557,7 +557,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zSC2</source>
+        <source>Privacy Actions for zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2242,7 +2242,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send SC2 to</source>
+        <source>Add destinations to send SCN to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2489,17 +2489,17 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
+        <source>Enable automatic minting of SCN units to zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zSC2 Automint</source>
+        <source>Enable zSCN Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zSC2 minting from specific addresses</source>
+        <source>Enable automatic zSCN minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2509,23 +2509,23 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zSC2</source>
+        <source>Percentage of autominted zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough SC2 for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough SCN for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zSC2 Denomination</source>
+        <source>Preferred Automint zSCN Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2744,7 +2744,7 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
     </message>
     <message>
         <location line="+71"/>
-        <source>SC2 Balance</source>
+        <source>SCN Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2781,14 +2781,14 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
     </message>
     <message>
         <location line="+96"/>
-        <source>zSC2 Balance</source>
+        <source>zSCN Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2861,7 +2861,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2877,7 +2877,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2893,7 +2893,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+111"/>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -3080,7 +3080,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+229"/>
-        <source>zSC2</source>
+        <source>zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3115,12 +3115,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+462"/>
-        <source>zSC2 Control</source>
+        <source>zSCN Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zSC2 Selected:</source>
+        <source>zSCN Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3145,7 +3145,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zSC2 for spending</source>
+        <source>Available (mature and spendable) zSCN for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3155,9 +3155,9 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3174,7 +3174,7 @@ zSC2 are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 zSC2</source>
+        <source>0 zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3252,7 +3252,7 @@ zSC2 are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+25"/>
         <location line="+704"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3286,14 +3286,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add &apos;enablezeromint=1&apos; to securecloud2.conf
 - disable: add &apos;enablezeromint=0&apos; to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
         <translation type="unfinished"></translation>
@@ -3363,7 +3363,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="-1092"/>
-        <source>Show zSC2 denominations list</source>
+        <source>Show zSCN denominations list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3373,12 +3373,12 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+29"/>
-        <source>zSC2 minting is DISABLED</source>
+        <source>zSCN minting is DISABLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+131"/>
-        <source>zSC2 spending is NOT private (links back to the mint transaction)</source>
+        <source>zSCN spending is NOT private (links back to the mint transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3544,12 +3544,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+240"/>
-        <source>zSC2 Spend #: </source>
+        <source>zSCN Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>zSC2 Mint</source>
+        <source>zSCN Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3569,12 +3569,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>zSC2 is currently disabled due to maintenance.</source>
+        <source>zSCN is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-537"/>
-        <source>zSC2 is currently undergoing maintenance.</source>
+        <source>zSCN is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4287,7 +4287,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zSC2 Backup Path:</source>
+        <source>Custom zSCN Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4880,12 +4880,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 SC2</source>
+        <source>0 SCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+149"/>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 SC2 applies</source>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 SCN applies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4955,12 +4955,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1026"/>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSC2s in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSCNs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uSC2s and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSC2s in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uSC2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSCNs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uSCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5026,7 +5026,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized SC2</source>
+        <source>Anonymized SCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5906,12 +5906,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>SC2 Stake</source>
+        <source>SCN Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zSC2 Stake</source>
+        <source>zSCN Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5936,37 +5936,37 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted SC2 to zSC2</source>
+        <source>Converted SCN to zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zSC2</source>
+        <source>Spent zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received SC2 from zSC2</source>
+        <source>Received SCN from zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zSC2 from zSC2 Spend</source>
+        <source>Minted Change as zSCN from zSCN Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zSC2 to SC2</source>
+        <source>Converted zSCN to SCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Anonymous (zSC2 Transaction)</source>
+        <source>Anonymous (zSCN Transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Anonymous (zSC2 Stake)</source>
+        <source>Anonymous (zSCN Stake)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6235,12 +6235,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="-310"/>
-        <source>Received SC2 from zSC2</source>
+        <source>Received SCN from zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in zSC2</source>
+        <source>Zerocoin Spend, Change in zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6287,7 +6287,7 @@ Please be patient...</source>
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 SC2.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 SCN.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6328,7 +6328,7 @@ Please be patient...</source>
     <name>ZPivControlDialog</name>
     <message>
         <location filename="../forms/zsc2controldialog.ui" line="+20"/>
-        <source>Select zSC2 to Spend</source>
+        <source>Select zSCN to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6344,7 +6344,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="-7"/>
-        <source>zSC2</source>
+        <source>zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6432,17 +6432,17 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zSC2 minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for SC2 inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for SCN inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zSC2 inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zSCN inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6487,12 +6487,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in SC2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in SCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6647,12 +6647,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SC2.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 SC2.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6917,7 +6917,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zSC2 spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zSCN spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7032,7 +7032,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in SC2/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in SCN/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7162,22 +7162,22 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating SC2 supply...</source>
+        <source>Recalculating SCN supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating minted ZSC2...</source>
+        <source>Recalculating minted ZSCN...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating spent ZSC2...</source>
+        <source>Recalculating spent ZSCN...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the SC2 and zSC2 money supply statistics</source>
+        <source>Reindex the SCN and zSCN money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7274,7 +7274,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zSC2 backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7824,7 +7824,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zSC2 wallet...</source>
+        <source>Syncing zSCN wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7964,7 +7964,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zSC2</source>
+        <source>Value is below the smallest available denomination (= 1) of zSCN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>Dabar SecureCloud2 išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų SC2 nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar SecureCloud2 išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų SCN nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO SC2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO SCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>zSC2 Saugumo Veiksmai </translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>zSCN Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1604,8 +1604,8 @@ MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send SC2 to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti SC2</translation>
+        <source>Add destinations to send SCN to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti SCN</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1776,24 +1776,24 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Įgalinti automatinį konvertavimą iš SC2 į zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Įgalinti automatinį konvertavimą iš SCN į zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Įgalinti zSC2 Automatinį nukaldinima</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Įgalinti zSCN Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto SC2, kuris automatiškai bus konvertuotas į zSC2 naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto SCN, kuris automatiškai bus konvertuotas į zSCN naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Automatiškai sukurtų zSC2 procentas</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Automatiškai sukurtų zSCN procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Pageidautinas zSC2 Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Pageidautinas zSCN Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the SecureCloud2 network through a SOCKS5 proxy.</source>
@@ -1915,8 +1915,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>SC2 Balansas</translation>
+        <source>SCN Balance</source>
+        <translation>SCN Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -1943,14 +1943,14 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         <translation>Jūsų dabartinis SecureCloud2 balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>zSC2 Balansas</translation>
+        <source>zSCN Balance</source>
+        <translation>zSCN Balansas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Subrendę: daugiau nei 20 patvirtinimų ir daugiau nei 1 konvertacija to pačio nominalo, kai jis jau buvo konvertuotas.
-Šiuos zSC2 galima išleisti.</translation>
+Šiuos zSCN galima išleisti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2003,8 +2003,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>Užrakinti SC2 arba Masternode užstatai. Jie yra neįtraukti į zSC2 kalimą.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>Užrakinti SCN arba Masternode užstatai. Jie yra neįtraukti į zSCN kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2108,8 +2108,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2128,12 +2128,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>PRIVATUMAS</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
+        <source>zSCN Control</source>
         <translation>zPiv Kontrolė</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>Pasirinkta zSC2:</translation>
+        <source>zSCN Selected:</source>
+        <translation>Pasirinkta zSCN:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2152,8 +2152,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2192,8 +2192,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Statistika:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zSC2</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zSCN</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2362,12 +2362,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Konvertavimo Statusas: Geras</translation>
     </message>
     <message>
-        <source>zSC2 Spend #: </source>
-        <translation>zSC2 Išleidimas #:</translation>
+        <source>zSCN Spend #: </source>
+        <translation>zSCN Išleidimas #:</translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>zSC2 Konvertavimas</translation>
+        <source>zSCN Mint</source>
+        <translation>zSCN Konvertavimas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2850,8 +2850,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 SC2</source>
-        <translation>0 SC2</translation>
+        <source>0 SCN</source>
+        <translation>0 SCN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3304,8 +3304,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     </context>
 <context>

@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SC2s from being stolen by malware infecting your computer.</source>
-        <translation>SecureCloud2 verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SC2 dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>SecureCloud2 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCNs from being stolen by malware infecting your computer.</source>
+        <translation>SecureCloud2 verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SCN dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SC2&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI SC2&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCN&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI SCN&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zSC2</source>
-        <translation>Operazioni di privacy per zSC2</translation>
+        <source>Privacy Actions for zSCN</source>
+        <translation>Operazioni di privacy per zSCN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1103,7 +1103,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- %1 usc2 per input.</source>
-        <translation>Può variare di +/- %1 uSC2 per input.</translation>
+        <translation>Può variare di +/- %1 uSCN per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1262,7 +1262,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to SecureCloud2 Core.</source>
-        <translation>Benvenuto in SC2IX Core.</translation>
+        <translation>Benvenuto in SCNIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where SecureCloud2 Core will store its data.</source>
@@ -1638,24 +1638,24 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SC2 units to zSC2</source>
-        <translation>Attiva il conio automatico di unità SC2 in zSC2</translation>
+        <source>Enable automatic minting of SCN units to zSCN</source>
+        <translation>Attiva il conio automatico di unità SCN in zSCN</translation>
     </message>
     <message>
-        <source>Enable zSC2 Automint</source>
-        <translation>Attiva Conio automatico zSC2</translation>
+        <source>Enable zSCN Automint</source>
+        <translation>Attiva Conio automatico zSCN</translation>
     </message>
     <message>
-        <source>Percentage of incoming SC2 which get automatically converted to zSC2 via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di SC2 in entrata che viene automaticamente convertita in zSC2 attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SCN which get automatically converted to zSCN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di SCN in entrata che viene automaticamente convertita in zSCN attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSC2</source>
-        <translation>Percentuale di zSC2 Percentuale di zSC2 da coniare automaticamente</translation>
+        <source>Percentage of autominted zSCN</source>
+        <translation>Percentuale di zSCN Percentuale di zSCN da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zSC2 Denomination</source>
-        <translation>Denominazione preferita conio automatico zSC2</translation>
+        <source>Preferred Automint zSCN Denomination</source>
+        <translation>Denominazione preferita conio automatico zSCN</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1717,8 +1717,8 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>SC2 Balance</source>
-        <translation>Bilancio SC2</translation>
+        <source>SCN Balance</source>
+        <translation>Bilancio SCN</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1733,14 +1733,14 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Il tuo saldo SecureCloud2 corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zSC2 Balance</source>
-        <translation>Bilancio zSC2</translation>
+        <source>zSCN Balance</source>
+        <translation>Bilancio zSCN</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zSC2 are spendable.</source>
+These zSCN are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zSC2 sono spendibili.</translation>
+Questi zSCN sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1771,8 +1771,8 @@ Questi zSC2 sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked SC2 or Masternode collaterals. These are excluded from zSC2 minting.</source>
-        <translation>SC2 bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zSC2.</translation>
+        <source>Locked SCN or Masternode collaterals. These are excluded from zSCN minting.</source>
+        <translation>SCN bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zSCN.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1783,18 +1783,18 @@ Questi zSC2 sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zSC2 balance, unconfirmed and immature zSC2 included.</source>
-        <translation>Il tuo saldo zSC2 corrente, inclusi zSC2 non confermati e non maturi</translation>
+        <source>Your current zSCN balance, unconfirmed and immature zSCN included.</source>
+        <translation>Il tuo saldo zSCN corrente, inclusi zSCN non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zSC2.
+        <source>Current percentage of zSCN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zSC2.
+        <translation>Percentuale corrente di zSCN.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1858,8 +1858,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1870,12 +1870,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zSC2 Control</source>
-        <translation>Controllo zSC2</translation>
+        <source>zSCN Control</source>
+        <translation>Controllo zSCN</translation>
     </message>
     <message>
-        <source>zSC2 Selected:</source>
-        <translation>zSC2 selezionati:</translation>
+        <source>zSCN Selected:</source>
+        <translation>zSCN selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1886,23 +1886,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending</source>
-        <translation>zSC2 disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zSCN for spending</source>
+        <translation>zSCN disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zSC2 for spending
+        <source>Available (mature and spendable) zSCN for spending
 
-zSC2 are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zSC2 disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zSC2 sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zSCN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zSCN disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zSCN sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zSC2</source>
-        <translation>0 zSC2</translation>
+        <source>0 zSCN</source>
+        <translation>0 zSCN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1945,31 +1945,31 @@ Gli zSC2 sono maturi quando hanno più di 20 conferme E più di 2 conii della st
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zSC2</source>
-        <translation>Saldo totale inclusi zSC2 non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zSCN</source>
+        <translation>Saldo totale inclusi zSCN non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zSC2 minting.
+        <source>Show the current status of automatic zSCN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to securecloud2.conf
 - disable: add 'enablezeromint=0' to securecloud2.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zSC2
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCN
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zSC2.
+        <translation>Mostra lo stato corrente del conio automatico zSCN.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a securecloud2.conf
 - disattivato: aggiungi 'enablezeromint=0' a securecloud2.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zSC2 da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zSCN da coniare automaticamente
 
 </translation>
     </message>
@@ -2110,8 +2110,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Differenza:</translation>
     </message>
     <message>
-        <source>zSC2 Mint</source>
-        <translation>Conio zSC2</translation>
+        <source>zSCN Mint</source>
+        <translation>Conio zSCN</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2600,8 +2600,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>0</translation>
     </message>
     <message>
-        <source>zSC2</source>
-        <translation>zSC2</translation>
+        <source>zSCN</source>
+        <translation>zSCN</translation>
     </message>
     </context>
 <context>

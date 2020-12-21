@@ -88,7 +88,7 @@ Reindex the accumulator database on startup
 .HP
 \fB\-reindexmoneysupply\fR
 .IP
-Reindex the SC2 and zSC2 money supply statistics on startup
+Reindex the SCN and zSCN money supply statistics on startup
 .HP
 \fB\-resync\fR
 .IP
@@ -263,7 +263,7 @@ Set key pool size to <n> (default: 100)
 .HP
 \fB\-paytxfee=\fR<amt>
 .IP
-Fee (in SC2/kB) to add to transactions you send (default: 0.00)
+Fee (in SCN/kB) to add to transactions you send (default: 0.00)
 .HP
 \fB\-rescan\fR
 .IP
@@ -373,7 +373,7 @@ Prepend debug output with timestamp (default: 1)
 .HP
 \fB\-minrelaytxfee=\fR<amt>
 .IP
-Fees (in SC2/Kb) smaller than this are considered zero fee for relaying
+Fees (in SCN/Kb) smaller than this are considered zero fee for relaying
 (default: 0.0001)
 .HP
 \fB\-printtoconsole\fR
@@ -401,11 +401,11 @@ Enable staking functionality (0\-1, default: 1)
 .HP
 \fB\-sc2stake=\fR<n>
 .IP
-Enable or disable staking functionality for SC2 inputs (0\-1, default: 1)
+Enable or disable staking functionality for SCN inputs (0\-1, default: 1)
 .HP
 \fB\-zsc2stake=\fR<n>
 .IP
-Enable or disable staking functionality for zSC2 inputs (0\-1, default:
+Enable or disable staking functionality for zSCN inputs (0\-1, default:
 1)
 .HP
 \fB\-reservebalance=\fR<amt>
@@ -459,12 +459,12 @@ Preferred Denomination for automatically minted Zerocoin
 .HP
 \fB\-backupzsc2=\fR<n>
 .IP
-Enable automatic wallet backups triggered after each zSC2 minting (0\-1,
+Enable automatic wallet backups triggered after each zSCN minting (0\-1,
 default: 1)
 .HP
 \fB\-zsc2backuppath=\fR<dir|file>
 .IP
-Specify custom backup path to add a copy of any automatic zSC2 backup.
+Specify custom backup path to add a copy of any automatic zSCN backup.
 If set as dir, every backup generates a timestamped file. If set as
 file, will rewrite to that file every backup. If backuppath is set as
 well, 4 backups will happen

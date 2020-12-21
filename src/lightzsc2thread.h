@@ -3,8 +3,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
 
-#ifndef SecureCloud2_LIGHTZSC2THREAD_H
-#define SecureCloud2_LIGHTZSC2THREAD_H
+#ifndef SecureCloud2_LIGHTZSCNTHREAD_H
+#define SecureCloud2_LIGHTZSCNTHREAD_H
 
 #include <atomic>
 #include "genwit.h"
@@ -51,7 +51,7 @@ public:
 
     void StartLightZsc2Thread(boost::thread_group& threadGroup) {
         LogPrintf("%s thread start\n", "securecloud2-light-thread");
-        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZSC2Simplified, this));
+        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZSCNSimplified, this));
     }
 
     void StopLightZsc2Thread() {
@@ -61,10 +61,10 @@ public:
 
 private:
 
-    void ThreadLightZSC2Simplified();
+    void ThreadLightZSCNSimplified();
 
     void rejectWork(CGenWit& wit, int blockHeight, uint32_t errorNumber);
 
 };
 
-#endif //SecureCloud2_LIGHTZSC2THREAD_H
+#endif //SecureCloud2_LIGHTZSCNTHREAD_H
