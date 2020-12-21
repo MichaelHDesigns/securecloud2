@@ -347,7 +347,7 @@ void PrivacyDialog::sendzSCN()
         return;
     }
 
-    // Convert change to zSC2
+    // Convert change to zSCN
     bool fMintChange = false;// ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
@@ -411,7 +411,7 @@ void PrivacyDialog::sendzSCN()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on your hardware.\nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zSC2 selector if applicable
+    // use mints from zSCN selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
     if (!ZPivControlDialog::setSelectedMints.empty()) {
@@ -774,7 +774,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzSC2SyncStatus->setVisible(fShow);
+    ui->labelzSCNSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)
