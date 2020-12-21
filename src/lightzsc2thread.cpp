@@ -4,7 +4,7 @@
 //
 
 
-#include "lightzsc2thread.h"
+#include "lightzscnthread.h"
 #include "main.h"
 
 /****** Thread ********/
@@ -94,7 +94,7 @@ void CLightWorker::ThreadLightZSCNSimplified() {
             }
         } catch (std::exception& e) {
             //std::cout << "exception in light loop, closing it. " << e.what() << std::endl;
-            PrintExceptionContinue(&e, "lightzsc2thread");
+            PrintExceptionContinue(&e, "lightzscnthread");
             break;
         }
     }

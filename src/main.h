@@ -20,8 +20,8 @@
 #include "pow.h"
 #include "primitives/block.h"
 #include "primitives/transaction.h"
-#include "zsc2/zerocoin.h"
-#include "zsc2/zsc2module.h"
+#include "zscn/zerocoin.h"
+#include "zscn/zscnmodule.h"
 #include "script/script.h"
 #include "script/sigcache.h"
 #include "script/standard.h"
@@ -41,7 +41,7 @@
 #include <vector>
 
 #include "libzerocoin/CoinSpend.h"
-#include "lightzsc2thread.h"
+#include "lightzscnthread.h"
 
 #include <boost/unordered_map.hpp>
 

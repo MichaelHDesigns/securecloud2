@@ -11,7 +11,7 @@
 
 #include "init.h"
 
-#include "zsc2/accumulators.h"
+#include "zscn/accumulators.h"
 #include "activemasternode.h"
 #include "addrman.h"
 #include "amount.h"
@@ -39,8 +39,8 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "zsc2/accumulatorcheckpoints.h"
-#include "zsc2chain.h"
+#include "zscn/accumulatorcheckpoints.h"
+#include "zscnchain.h"
 
 #ifdef ENABLE_WALLET
 #include "wallet/db.h"
@@ -292,7 +292,7 @@ void Shutdown()
     StopTorControl();
     // Shutdown witness thread if it's enabled
     if (nLocalServices == NODE_BLOOM_LIGHT_ZC) {
-        lightWorker.StopLightZsc2Thread();
+        lightWorker.StopLightZscnThread();
     }
 #ifdef ENABLE_WALLET
     delete pwalletMain;
@@ -537,8 +537,8 @@ std::string HelpMessage(HelpMessageMode mode)
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-sc2stake=<n>", strprintf(_("Enable or disable staking functionality for SCN inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zsc2stake=<n>", strprintf(_("Enable or disable staking functionality for zSCN inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-scnstake=<n>", strprintf(_("Enable or disable staking functionality for SCN inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zscnstake=<n>", strprintf(_("Enable or disable staking functionality for zSCN inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -560,10 +560,10 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enableautoconvertaddress=<n>", strprintf(_("Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"), DEFAULT_AUTOCONVERTADDRESS));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (1-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupzsc2=<n>", strprintf(_("Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-backupzscn=<n>", strprintf(_("Enable automatic wallet backups triggered after each zSCN minting (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-precompute=<n>", strprintf(_("Enable precomputation of zSCN spends and stakes (0-1, default %u)"), 1));
     strUsage += HelpMessageOpt("-precomputecachelength=<n>", strprintf(_("Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)"), MIN_PRECOMPUTE_LENGTH, MAX_PRECOMPUTE_LENGTH, DEFAULT_PRECOMPUTE_LENGTH));
-    strUsage += HelpMessageOpt("-zsc2backuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
+    strUsage += HelpMessageOpt("-zscnbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zSCN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
 #endif // ENABLE_WALLET
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
 
@@ -1514,16 +1514,16 @@ bool AppInit2()
 
                     // Supply needs to be exactly GetSupplyBeforeFakeSerial + GetWrapppedSerialInflationAmount
                     CBlockIndex* pblockindex = chainActive[Params().Zerocoin_Block_EndFakeSerial() + 1];
-                    CAmount zsc2SupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
+                    CAmount zscnSupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
 
-                    if (pblockindex->GetZerocoinSupply() < zsc2SupplyCheckpoint) {
+                    if (pblockindex->GetZerocoinSupply() < zscnSupplyCheckpoint) {
                         // Trigger reindex due wrapping serials
-                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zsc2SupplyCheckpoint/COIN);
+                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zscnSupplyCheckpoint/COIN);
                         reindexDueWrappedSerials = true;
-                    } else if (pblockindex->GetZerocoinSupply() > zsc2SupplyCheckpoint) {
+                    } else if (pblockindex->GetZerocoinSupply() > zscnSupplyCheckpoint) {
                         // Trigger global zSCN reindex
                         reindexZerocoin = true;
-                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zsc2SupplyCheckpoint/COIN);
+                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zscnSupplyCheckpoint/COIN);
                     }
 
                 }
@@ -1545,9 +1545,9 @@ bool AppInit2()
                 // Check Recalculation result
                 if(Params().NetworkID() == CBaseChainParams::MAIN && chainHeight > Params().Zerocoin_Block_EndFakeSerial()) {
                     CBlockIndex* pblockindex = chainActive[Params().Zerocoin_Block_EndFakeSerial() + 1];
-                    CAmount zsc2SupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
-                    if (pblockindex->GetZerocoinSupply() != zsc2SupplyCheckpoint)
-                        return InitError(strprintf("ZerocoinSupply Recalculation failed: %d vs %d", pblockindex->GetZerocoinSupply()/COIN , zsc2SupplyCheckpoint/COIN));
+                    CAmount zscnSupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
+                    if (pblockindex->GetZerocoinSupply() != zscnSupplyCheckpoint)
+                        return InitError(strprintf("ZerocoinSupply Recalculation failed: %d vs %d", pblockindex->GetZerocoinSupply()/COIN , zscnSupplyCheckpoint/COIN));
                 }
 
                 // Force recalculation of accumulators.
@@ -1773,11 +1773,11 @@ bool AppInit2()
 
         pwalletMain->InitAutoConvertAddresses();
 
-        bool fEnableZPivBackups = GetBoolArg("-backupzsc2", true);
+        bool fEnableZPivBackups = GetBoolArg("-backupzscn", true);
         pwalletMain->setZPivAutoBackups(fEnableZPivBackups);
 
         //Load zerocoin mint hashes to memory
-        pwalletMain->zsc2Tracker->Init();
+        pwalletMain->zscnTracker->Init();
         zwalletMain->LoadMintPoolFromDB();
         zwalletMain->SyncWithChain();
     }  // (!fDisableWallet)
@@ -1986,7 +1986,7 @@ bool AppInit2()
 
     if (nLocalServices & NODE_BLOOM_LIGHT_ZC) {
         // Run a thread to compute witnesses
-        lightWorker.StartLightZsc2Thread(threadGroup);
+        lightWorker.StartLightZscnThread(threadGroup);
     }
 
 #ifdef ENABLE_WALLET

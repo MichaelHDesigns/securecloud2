@@ -1319,7 +1319,7 @@ case $os in
 		os=chorusos
 		;;
 	isc)
-		os=isc2.2
+		os=iscn.2
 		;;
 	sco6)
 		os=sco5v6

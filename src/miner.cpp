@@ -23,11 +23,11 @@
 #endif
 #include "validationinterface.h"
 #include "masternode-payments.h"
-#include "zsc2/accumulators.h"
+#include "zscn/accumulators.h"
 #include "blocksignature.h"
 #include "spork.h"
 #include "invalid.h"
-#include "zsc2chain.h"
+#include "zscnchain.h"
 
 
 #include <boost/thread.hpp>
@@ -227,8 +227,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 //zerocoinspend has special vin
                 if (hasZerocoinSpends) {
                     //Give a high priority to zerocoinspends to get into the next block
-                    //Priority = (age^6+100000)*amount - gives higher priority to zsc2s that have been in mempool long
-                    //and higher priority to zsc2s that are large in value
+                    //Priority = (age^6+100000)*amount - gives higher priority to zscns that have been in mempool long
+                    //and higher priority to zscns that are large in value
                     int64_t nTimeSeen = GetAdjustedTime();
                     double nConfs = 100000;
 
@@ -615,8 +615,8 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock)) {
         if (pblock->IsZerocoinStake()) {
-            pwalletMain->zsc2Tracker->RemovePending(pblock->vtx[1].GetHash());
-            pwalletMain->zsc2Tracker->ListMints(true, true, true); //update the state
+            pwalletMain->zscnTracker->RemovePending(pblock->vtx[1].GetHash());
+            pwalletMain->zscnTracker->ListMints(true, true, true); //update the state
         }
         return error("SecureCloud2Miner : ProcessNewBlock, block not accepted");
     }

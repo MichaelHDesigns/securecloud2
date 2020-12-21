@@ -131,8 +131,8 @@
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZsc2OptionsWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZsc2OptionsLayout">
+        <widget class="QWidget" name="verticalZscnOptionsWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZscnOptionsLayout">
           <property name="margin">
            <number>0</number>
           </property>
@@ -561,8 +561,8 @@ https://www.transifex.com/securecloud2-project/securecloud2-project-translations
         </layout>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZsc2DisplayWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZsc2DisplayLayout">
+        <widget class="QWidget" name="verticalZscnDisplayWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZscnDisplayLayout">
           <property name="margin">
            <number>0</number>
           </property>

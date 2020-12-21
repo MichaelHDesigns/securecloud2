@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zsc2controldialog.h"
+#include "zscncontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -22,8 +22,8 @@
 #include <QSettings>
 #include <utilmoneystr.h>
 #include <QtWidgets>
-#include <zsc2/deterministicmint.h>
-#include <zsc2/accumulators.h>
+#include <zscn/deterministicmint.h>
+#include <zscn/accumulators.h>
 
 PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint | Qt::WindowCloseButtonHint),
                                                           ui(new Ui::PrivacyDialog),
@@ -472,7 +472,7 @@ void PrivacyDialog::sendzSCN()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear zsc2 selector in case it was used
+    // Clear zscn selector in case it was used
     ZPivControlDialog::setSelectedMints.clear();
     ui->labelzPivSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
@@ -630,7 +630,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    std::vector<CMintMeta> vMints = pwalletMain->zsc2Tracker->GetMints(false);
+    std::vector<CMintMeta> vMints = pwalletMain->zscnTracker->GetMints(false);
     map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
     for (auto& meta : vMints){
         // All denominations

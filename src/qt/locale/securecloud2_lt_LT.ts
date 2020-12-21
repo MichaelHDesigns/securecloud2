@@ -1098,8 +1098,8 @@ MultiSend: %1</translation>
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 usc2 per input.</source>
-        <translation>Gali skirtis +/- %1 usc2 kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 uscn per input.</source>
+        <translation>Gali skirtis +/- %1 uscn kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>

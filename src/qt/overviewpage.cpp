@@ -193,7 +193,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // SCN Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount sc2AvailableBalance = balance - immatureBalance - nLockedBalance;
+    CAmount scnAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
     // SCN Watch-Only Balance
@@ -208,11 +208,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     QString sPercentage = "";
     getPercentage(nUnlockedBalance, zerocoinBalance, sPercentage, szPercentage);
     // Combined balances
-    CAmount availableTotalBalance = sc2AvailableBalance + matureZerocoinBalance;
+    CAmount availableTotalBalance = scnAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
     // SCN labels
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sc2AvailableBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, scnAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
@@ -262,7 +262,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showWatchOnly = nTotalWatchBalance != 0;
 
     // SCN Available
-    bool showSCNAvailable = settingShowAllBalances || sc2AvailableBalance != nTotalBalance;
+    bool showSCNAvailable = settingShowAllBalances || scnAvailableBalance != nTotalBalance;
     bool showWatchOnlySCNAvailable = showSCNAvailable || nAvailableWatchBalance != nTotalWatchBalance;
     ui->labelBalanceText->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
     ui->labelBalance->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);

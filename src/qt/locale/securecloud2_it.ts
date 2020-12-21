@@ -1102,7 +1102,7 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 usc2 per input.</source>
+        <source>Can vary +/- %1 uscn per input.</source>
         <translation>Può variare di +/- %1 uSCN per input.</translation>
     </message>
     <message>

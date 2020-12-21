@@ -8,7 +8,7 @@
 
 #include <atomic>
 #include "genwit.h"
-#include "zsc2/accumulators.h"
+#include "zscn/accumulators.h"
 #include "concurrentqueue.h"
 #include "chainparams.h"
 #include <boost/function.hpp>
@@ -49,12 +49,12 @@ public:
         return true;
     }
 
-    void StartLightZsc2Thread(boost::thread_group& threadGroup) {
+    void StartLightZscnThread(boost::thread_group& threadGroup) {
         LogPrintf("%s thread start\n", "securecloud2-light-thread");
         threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZSCNSimplified, this));
     }
 
-    void StopLightZsc2Thread() {
+    void StopLightZscnThread() {
         threadIns.interrupt();
         LogPrintf("%s thread interrupted\n", "securecloud2-light-thread");
     }

@@ -289,7 +289,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     std::string strPathCustom = GetArg("-backuppath", "");
-    std::string strzSCNPathCustom = GetArg("-zsc2backuppath", "");
+    std::string strzSCNPathCustom = GetArg("-zscnbackuppath", "");
     int nCustomBackupThreshold = GetArg("-custombackupthreshold", DEFAULT_CUSTOMBACKUPTHRESHOLD);
 
     if(!strPathCustom.empty()) {
@@ -299,9 +299,9 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
     }
 
     if(!strzSCNPathCustom.empty()) {
-        ui->wallet_customzsc2backuppath->setText(QString::fromStdString(strzSCNPathCustom));
-        ui->wallet_customzsc2backuppath_label->setVisible(true);
-        ui->wallet_customzsc2backuppath->setVisible(true);
+        ui->wallet_customzscnbackuppath->setText(QString::fromStdString(strzSCNPathCustom));
+        ui->wallet_customzscnbackuppath_label->setVisible(true);
+        ui->wallet_customzscnbackuppath->setVisible(true);
     }
 
     if((!strPathCustom.empty() || !strzSCNPathCustom.empty()) && nCustomBackupThreshold > 0) {

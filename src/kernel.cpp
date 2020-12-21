@@ -12,7 +12,7 @@
 #include "util.h"
 #include "stakeinput.h"
 #include "utilmoneystr.h"
-#include "zsc2chain.h"
+#include "zscnchain.h"
 
 using namespace std;
 
@@ -407,9 +407,9 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, std::uniqu
         if (!VerifyScript(txin.scriptSig, txPrev.vout[txin.prevout.n].scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS, TransactionSignatureChecker(&tx, 0)))
             return error("CheckProofOfStake() : VerifySignature failed on coinstake %s", tx.GetHash().ToString().c_str());
 
-        CPivStake* sc2Input = new CPivStake();
-        sc2Input->SetInput(txPrev, txin.prevout.n);
-        stake = std::unique_ptr<CStakeInput>(sc2Input);
+        CPivStake* scnInput = new CPivStake();
+        scnInput->SetInput(txPrev, txin.prevout.n);
+        stake = std::unique_ptr<CStakeInput>(scnInput);
     }
 
     //Get the
