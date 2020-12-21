@@ -605,7 +605,7 @@ font-weight: bold;</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzSC2BalanceText">
+                         <widget class="QLabel" name="labelzSCNBalanceText">
                           <property name="toolTip">
                            <string>Available (mature and spendable) zSCN for spending</string>
                           </property>
