@@ -145,7 +145,7 @@
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_3">
                         <item>
-                         <widget class="QLabel" name="labelzSC2Actions">
+                         <widget class="QLabel" name="labelzSCNActions">
                           <property name="font">
                            <font>
                             <pointsize>12</pointsize>
@@ -162,7 +162,7 @@
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzSC2SyncStatus">
+                         <widget class="QLabel" name="labelzSCNSyncStatus">
                           <property name="toolTip">
                            <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SecureCloud2 network after a connection is established, but this process has not completed yet.</string>
                           </property>
@@ -589,7 +589,7 @@ font-weight: bold;</string>
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_6">
                         <item>
-                         <widget class="QPushButton" name="pushButtonSpendzSC2">
+                         <widget class="QPushButton" name="pushButtonSpendzSCN">
                           <property name="minimumSize">
                            <size>
                             <width>131</width>
@@ -775,7 +775,7 @@ zSCN are mature when they have more than 20 confirmations AND more than 2 mints 
                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                           </property>
                           <property name="buddy">
-                           <cstring>zSC2payAmount</cstring>
+                           <cstring>zSCNpayAmount</cstring>
                           </property>
                          </widget>
                         </item>
@@ -785,10 +785,10 @@ zSCN are mature when they have more than 20 confirmations AND more than 2 mints 
                            <number>0</number>
                           </property>
                           <item>
-                           <widget class="QLineEdit" name="zSC2payAmount"/>
+                           <widget class="QLineEdit" name="zSCNpayAmount"/>
                           </item>
                           <item>
-                           <widget class="QLabel" name="labelzSC2">
+                           <widget class="QLabel" name="labelzSCN">
                             <property name="minimumSize">
                              <size>
                               <width>55</width>
@@ -880,7 +880,7 @@ zSCN are mature when they have more than 20 confirmations AND more than 2 mints 
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_21">
                         <item>
-                         <widget class="QLabel" name="labelzSC2Stats">
+                         <widget class="QLabel" name="labelzSCNStats">
                           <property name="font">
                            <font>
                             <pointsize>12</pointsize>
