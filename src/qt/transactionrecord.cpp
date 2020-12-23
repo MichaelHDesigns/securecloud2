@@ -11,7 +11,7 @@
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet/wallet.h"
-#include "zsc2chain.h"
+#include "zscnchain.h"
 #include "main.h"
 
 #include <iostream>
@@ -66,7 +66,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         if (!wtx.HasZerocoinSpendInputs() && !ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return parts;
 
-        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zsc2Tracker->HasMintTx(hash))) {
+        if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zscnTracker->HasMintTx(hash))) {
             //zSCN stake reward
             sub.involvesWatchAddress = false;
             sub.type = TransactionRecord::StakeZSCN;

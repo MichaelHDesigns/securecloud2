@@ -11,7 +11,7 @@
 #include "wallet/wallet.h"
 #include "wallet/walletdb.h"
 #include "txdb.h"
-#include "zsc2/zsc2module.h"
+#include "zscn/zscnmodule.h"
 #include "test/test_securecloud2.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
@@ -31,7 +31,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
 
     bool fFirstRun;
     cWallet.LoadWallet(fFirstRun);
-    cWallet.zsc2Tracker = unique_ptr<CzSCNTracker>(new CzSCNTracker(cWallet.strWalletFile));
+    cWallet.zscnTracker = unique_ptr<CzSCNTracker>(new CzSCNTracker(cWallet.strWalletFile));
     CMutableTransaction tx;
     CWalletTx* wtx = new CWalletTx(&cWallet, tx);
     bool fMintChange=true;

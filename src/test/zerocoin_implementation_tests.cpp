@@ -7,16 +7,16 @@
 #include "chainparams.h"
 #include "main.h"
 #include "txdb.h"
-#include "zsc2/deterministicmint.h"
+#include "zscn/deterministicmint.h"
 #include "key.h"
-#include "zsc2/accumulatorcheckpoints.h"
+#include "zscn/accumulatorcheckpoints.h"
 #include "libzerocoin/bignum.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
-#include <zsc2/accumulators.h>
+#include <zscn/accumulators.h>
 #include "wallet/wallet.h"
-#include "zsc2/zsc2wallet.h"
-#include "zsc2chain.h"
+#include "zscn/zscnwallet.h"
+#include "zscnchain.h"
 #include "test_securecloud2.h"
 
 using namespace libzerocoin;

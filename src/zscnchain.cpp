@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zsc2chain.h"
-#include "zsc2/zsc2module.h"
+#include "zscnchain.h"
+#include "zscn/zscnmodule.h"
 #include "invalid.h"
 #include "main.h"
 #include "txdb.h"

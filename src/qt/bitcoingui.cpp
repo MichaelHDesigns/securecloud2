@@ -33,7 +33,6 @@
 #include "masternodelist.h"
 #include "guiinterface.h"
 #include "util.h"
-
 #include <iostream>
 
 #include <QAction>

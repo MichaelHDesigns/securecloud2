@@ -1994,7 +1994,7 @@ int64_t GetBlockValue(int nHeight)
      nSubsidy = 5000000 * COIN;
     }
     else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight > 0) {
-     nSubsidy = 14 * COIN;
+     nSubsidy = 15 * COIN;
     }
     else if (nHeight > Params().LAST_POW_BLOCK()) {
      nSubsidy = 1 * COIN;

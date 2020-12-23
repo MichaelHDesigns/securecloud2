@@ -131,7 +131,7 @@ private:
     QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
-
+ 
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
     Notificator* notificator;
@@ -216,7 +216,7 @@ private slots:
     void gotoBlockExplorerPage();
     /** Switch to masternode page */
     void gotoMasternodePage();
-    /** Switch to privacy page */
+     /** Switch to privacy page */
     void gotoReceiveCoinsPage();
     /** Switch to receive coins page */
     void gotoPrivacyPage();

@@ -7,7 +7,7 @@
 
 #include "wallet/wallet.h"
 
-#include "zsc2/accumulators.h"
+#include "zscn/accumulators.h"
 #include "base58.h"
 #include "checkpoints.h"
 #include "coincontrol.h"
@@ -24,20 +24,20 @@
 #include "txdb.h"
 #include "util.h"
 #include "utilmoneystr.h"
-#include "zsc2chain.h"
+#include "zscnchain.h"
 
 #include "denomination_functions.h"
 #include "libzerocoin/Denominations.h"
-#include "zsc2/zsc2wallet.h"
-#include "zsc2/zsc2tracker.h"
-#include "zsc2/deterministicmint.h"
+#include "zscn/zscnwallet.h"
+#include "zscn/zscntracker.h"
+#include "zscn/deterministicmint.h"
 #include <assert.h>
 
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
 #include <boost/filesystem/operations.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
-#include <zsc2/witness.h>
+#include <zscn/witness.h>
 
 using namespace std;
 
@@ -55,7 +55,7 @@ bool fGlobalUnlockSpendCache = false;
 int64_t nStartupTime = GetTime(); //!< Client startup time for use with automint
 
 /**
- * Fees smaller than this (in usc2) are considered zero fee (for transaction creation)
+ * Fees smaller than this (in uscn) are considered zero fee (for transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minTxFee 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
@@ -798,7 +798,7 @@ bool CWallet::IsUsed(const CBitcoinAddress address) const
 
 bool CWallet::IsMyZerocoinSpend(const CBigNum& bnSerial) const
 {
-    return zsc2Tracker->HasSerial(bnSerial);
+    return zscnTracker->HasSerial(bnSerial);
 }
 
 CAmount CWallet::GetDebit(const CTxIn& txin, const isminefilter& filter) const
@@ -1247,7 +1247,7 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
     int64_t nNow = GetTime();
     bool fCheckZSCN = GetBoolArg("-zapwallettxes", false);
     if (fCheckZSCN)
-        zsc2Tracker->Init();
+        zscnTracker->Init();
 
     CBlockIndex* pindex = pindexStart;
     {
@@ -1273,7 +1273,7 @@ int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
                     ret++;
             }
 
-            //If this is a zapwallettx, need to readd zsc2
+            //If this is a zapwallettx, need to readd zscn
             if (fCheckZSCN && pindex->nHeight >= Params().Zerocoin_StartHeight()) {
                 list<CZerocoinMint> listMints;
                 BlockToZerocoinMintList(block, listMints, true);
@@ -1461,7 +1461,7 @@ CAmount CWallet::GetZerocoinBalance(bool fMatureOnly) const
         //nLastMaturityCheck = chainActive.Height();
 
         CAmount nBalance = 0;
-        vector<CMintMeta> vMints = zsc2Tracker->GetMints(true);
+        vector<CMintMeta> vMints = zscnTracker->GetMints(true);
         for (auto meta : vMints) {
             // Every public coin spend is now spendable, no need to mint new coins on top.
             //if (meta.nHeight >= mapMintMaturity.at(meta.denom) || meta.nHeight >= chainActive.Height() || meta.nHeight == 0)
@@ -1471,7 +1471,7 @@ CAmount CWallet::GetZerocoinBalance(bool fMatureOnly) const
         return nBalance;
     }
 
-    return zsc2Tracker->GetBalance(false, false);
+    return zscnTracker->GetBalance(false, false);
 }
 
 CAmount CWallet::GetImmatureZerocoinBalance() const
@@ -1481,7 +1481,7 @@ CAmount CWallet::GetImmatureZerocoinBalance() const
 
 CAmount CWallet::GetUnconfirmedZerocoinBalance() const
 {
-    return zsc2Tracker->GetUnconfirmedBalance();
+    return zscnTracker->GetUnconfirmedBalance();
 }
 
 CAmount CWallet::GetUnlockedCoins() const
@@ -1528,7 +1528,7 @@ std::map<libzerocoin::CoinDenomination, CAmount> CWallet::GetMyZerocoinDistribut
         spread.insert(std::pair<libzerocoin::CoinDenomination, CAmount>(denom, 0));
     {
         LOCK(cs_wallet);
-        set<CMintMeta> setMints = zsc2Tracker->ListMints(true, true, true);
+        set<CMintMeta> setMints = zscnTracker->ListMints(true, true, true);
         for (auto& mint : setMints)
             spread.at(mint.denom)++;
     }
@@ -1795,7 +1795,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, NULL, false, STAKABLE_COINS);
     CAmount nAmountSelected = 0;
-    if (GetBoolArg("-sc2stake", true) && !fPrecompute) {
+    if (GetBoolArg("-scnstake", true) && !fPrecompute) {
         for (const COutput &out : vCoins) {
             //make sure not to outrun target amount
             if (nAmountSelected + out.tx->vout[out.i].nValue > nTargetAmount)
@@ -1828,7 +1828,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
 
     /* Disable zSCN Staking
     //zSCN
-    if ((GetBoolArg("-zsc2stake", true) || fPrecompute) && chainActive.Height() > Params().Zerocoin_Block_V2_Start() && !IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
+    if ((GetBoolArg("-zscnstake", true) || fPrecompute) && chainActive.Height() > Params().Zerocoin_Block_V2_Start() && !IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         //Only update zSCN set once per update interval
         bool fUpdate = false;
         static int64_t nTimeLastUpdate = 0;
@@ -1837,7 +1837,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
             nTimeLastUpdate = GetAdjustedTime();
         }
 
-        set<CMintMeta> setMints = zsc2Tracker->ListMints(true, true, fUpdate);
+        set<CMintMeta> setMints = zscnTracker->ListMints(true, true, fUpdate);
         for (auto meta : setMints) {
             if (meta.hashStake == 0) {
                 CZerocoinMint mint;
@@ -1845,7 +1845,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
                     uint256 hashStake = mint.GetSerialNumber().getuint256();
                     hashStake = Hash(hashStake.begin(), hashStake.end());
                     meta.hashStake = hashStake;
-                    zsc2Tracker->UpdateState(meta);
+                    zscnTracker->UpdateState(meta);
                 }
             }
             if (meta.nVersion < CZerocoinMint::STAKABLE_VERSION)
@@ -1864,7 +1864,7 @@ bool CWallet::MintableCoins()
 {
     LOCK(cs_main);
     CAmount nBalance = GetBalance();
-    CAmount nZsc2Balance = GetZerocoinBalance(false);
+    CAmount nZscnBalance = GetZerocoinBalance(false);
 
     // Regular SCN
     if (nBalance > 0) {
@@ -1890,8 +1890,8 @@ bool CWallet::MintableCoins()
     }
 
     // zSCN
-    if (nZsc2Balance > 0) {
-        set<CMintMeta> setMints = zsc2Tracker->ListMints(true, true, true);
+    if (nZscnBalance > 0) {
+        set<CMintMeta> setMints = zscnTracker->ListMints(true, true, true);
         for (auto mint : setMints) {
             if (mint.nVersion < CZerocoinMint::STAKABLE_VERSION)
                 continue;
@@ -2442,7 +2442,7 @@ bool CWallet::CreateCoinStake(
             FillBlockPayee(txNew, nMinFee, true, stakeInput->IsZSCN());
 
             {
-                TRY_LOCK(zsc2Tracker->cs_spendcache, fLocked);
+                TRY_LOCK(zscnTracker->cs_spendcache, fLocked);
                 if (!fLocked)
                     continue;
 
@@ -2495,13 +2495,13 @@ bool CWallet::CreateCoinStake(
                 return error("%s: extracting pubcoin from txout failed", __func__);
 
             uint256 hashPubcoin = GetPubCoinHash(pubcoin.getValue());
-            if (!zsc2Tracker->HasPubcoinHash(hashPubcoin))
+            if (!zscnTracker->HasPubcoinHash(hashPubcoin))
                 return error("%s: could not find pubcoinhash %s in tracker", __func__, hashPubcoin.GetHex());
 
-            CMintMeta meta = zsc2Tracker->GetMetaFromPubcoin(hashPubcoin);
+            CMintMeta meta = zscnTracker->GetMetaFromPubcoin(hashPubcoin);
             meta.txid = txNew.GetHash();
             meta.nHeight = chainActive.Height() + 1;
-            if (!zsc2Tracker->UpdateState(meta))
+            if (!zscnTracker->UpdateState(meta))
                 return error("%s: failed to update metadata in tracker", __func__);
         }
     }
@@ -3815,7 +3815,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
         CTxOut outMint;
         CDeterministicMint dMint;
         if (!CreateZSCNOutPut(denomination, outMint, dMint)) {
-            strFailReason = strprintf("%s: failed to create new zsc2 output", __func__);
+            strFailReason = strprintf("%s: failed to create new zscn output", __func__);
             return error(strFailReason.c_str());
         }
         txNew.vout.push_back(outMint);
@@ -3888,12 +3888,12 @@ bool CWallet::CheckCoinSpend(libzerocoin::CoinSpend& spend, libzerocoin::Accumul
         //Tried to spend an already spent zSCN
         receipt.SetStatus(_("The coin spend has been used"), ZSCN_SPENT_USED_ZSCN);
         uint256 hashSerial = GetSerialHash(spend.getCoinSerialNumber());
-        if(!zsc2Tracker->HasSerialHash(hashSerial))
+        if(!zscnTracker->HasSerialHash(hashSerial))
             return error("%s: serialhash %s not found in tracker", __func__, hashSerial.GetHex());
 
-        CMintMeta meta = zsc2Tracker->Get(hashSerial);
+        CMintMeta meta = zscnTracker->Get(hashSerial);
         meta.isUsed = true;
-        if (!zsc2Tracker->UpdateState(meta))
+        if (!zscnTracker->UpdateState(meta))
             LogPrintf("%s: failed to write zerocoinmint\n", __func__);
 
         return false;
@@ -3940,7 +3940,7 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
 
     int nLockAttempts = 0;
     while (nLockAttempts < 100) {
-        TRY_LOCK(zsc2Tracker->cs_spendcache, lockSpendcache);
+        TRY_LOCK(zscnTracker->cs_spendcache, lockSpendcache);
         if (!lockSpendcache) {
             fGlobalUnlockSpendCache = true;
             MilliSleep(100);
@@ -3950,8 +3950,8 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
 
         for (auto &it : mapMintsSelected) {
             CZerocoinMint mint = it.second;
-            CMintMeta meta = zsc2Tracker->Get(GetSerialHash(mint.GetSerialNumber()));
-            CoinWitnessData *coinWitness = zsc2Tracker->GetSpendCache(meta.hashStake);
+            CMintMeta meta = zscnTracker->Get(GetSerialHash(mint.GetSerialNumber()));
+            CoinWitnessData *coinWitness = zscnTracker->GetSpendCache(meta.hashStake);
 
             if (!coinWitness->nHeightAccEnd) {
                 *coinWitness = CoinWitnessData(mint);
@@ -4043,7 +4043,7 @@ bool CWallet::MintsToInputVectorPublicSpend(std::map<CBigNum, CZerocoinMint>& ma
 
     int nLockAttempts = 0;
     while (nLockAttempts < 100) {
-        TRY_LOCK(zsc2Tracker->cs_spendcache, lockSpendcache);
+        TRY_LOCK(zscnTracker->cs_spendcache, lockSpendcache);
         if (!lockSpendcache) {
             fGlobalUnlockSpendCache = true;
             MilliSleep(100);
@@ -4148,7 +4148,7 @@ bool CWallet::CreateZerocoinSpendTransaction(
     vector<CMintMeta> vMintsToFetch;
     if (vSelectedMints.empty()) {
         //  All of the zSCN used in the public coin spend are mature by default (everything is public now.. no need to wait for any accumulation)
-        setMints = zsc2Tracker->ListMints(true, false, true, true); // need to find mints to spend
+        setMints = zscnTracker->ListMints(true, false, true, true); // need to find mints to spend
         if(setMints.empty()) {
             receipt.SetStatus(_("Failed to find Zerocoins in wallet.dat"), nStatus);
             return false;
@@ -4194,12 +4194,12 @@ bool CWallet::CreateZerocoinSpendTransaction(
         if (IsSerialInBlockchain(mint.GetSerialNumber(), nHeightSpend)) {
             receipt.SetStatus(_("Trying to spend an already spent serial #, try again."), nStatus);
             uint256 hashSerial = GetSerialHash(mint.GetSerialNumber());
-            if (!zsc2Tracker->HasSerialHash(hashSerial))
+            if (!zscnTracker->HasSerialHash(hashSerial))
                 return error("%s: tracker does not have serialhash %s", __func__, hashSerial.GetHex());
 
-            CMintMeta meta = zsc2Tracker->Get(hashSerial);
+            CMintMeta meta = zscnTracker->Get(hashSerial);
             meta.isUsed = true;
-            zsc2Tracker->UpdateState(meta);
+            zscnTracker->UpdateState(meta);
 
             return false;
         }
@@ -4362,7 +4362,7 @@ string CWallet::ResetMintZerocoin()
     long deletions = 0;
     CWalletDB walletdb(pwalletMain->strWalletFile);
 
-    set<CMintMeta> setMints = zsc2Tracker->ListMints(false, false, true);
+    set<CMintMeta> setMints = zscnTracker->ListMints(false, false, true);
     vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     vector<CMintMeta> vMintsMissing;
     vector<CMintMeta> vMintsToUpdate;
@@ -4373,13 +4373,13 @@ string CWallet::ResetMintZerocoin()
     // Update the meta data of mints that were marked for updating
     for (CMintMeta meta : vMintsToUpdate) {
         updates++;
-        zsc2Tracker->UpdateState(meta);
+        zscnTracker->UpdateState(meta);
     }
 
     // Delete any mints that were unable to be located on the blockchain
     for (CMintMeta mint : vMintsMissing) {
         deletions++;
-        if (!zsc2Tracker->Archive(mint))
+        if (!zscnTracker->Archive(mint))
             LogPrintf("%s: failed to archive mint\n", __func__);
     }
 
@@ -4394,7 +4394,7 @@ string CWallet::ResetSpentZerocoin()
     long removed = 0;
     CWalletDB walletdb(pwalletMain->strWalletFile);
 
-    set<CMintMeta> setMints = zsc2Tracker->ListMints(false, false, true);
+    set<CMintMeta> setMints = zscnTracker->ListMints(false, false, true);
     list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     list<CZerocoinSpend> listUnconfirmedSpends;
 
@@ -4416,7 +4416,7 @@ string CWallet::ResetSpentZerocoin()
             if (meta.hashSerial == GetSerialHash(spend.GetSerial())) {
                 removed++;
                 meta.isUsed = false;
-                zsc2Tracker->UpdateState(meta);
+                zscnTracker->UpdateState(meta);
                 walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial());
                 continue;
             }
@@ -4466,10 +4466,10 @@ void CWallet::ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, s
         mint.SetHeight(nHeight);
         mint.SetUsed(IsSerialInBlockchain(mint.GetSerialNumber(), nHeight));
 
-        if (!zsc2Tracker->UnArchive(hashPubcoin, false)) {
+        if (!zscnTracker->UnArchive(hashPubcoin, false)) {
             LogPrintf("%s : failed to unarchive mint %s\n", __func__, mint.GetValue().GetHex());
         } else {
-            zsc2Tracker->UpdateZerocoinMint(mint);
+            zscnTracker->UpdateZerocoinMint(mint);
         }
         listMintsRestored.emplace_back(mint);
     }
@@ -4485,22 +4485,22 @@ void CWallet::ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, s
         uint256 txidSpend;
         dMint.SetUsed(IsSerialInBlockchain(dMint.GetSerialHash(), nHeight, txidSpend));
 
-        if (!zsc2Tracker->UnArchive(dMint.GetPubcoinHash(), true)) {
+        if (!zscnTracker->UnArchive(dMint.GetPubcoinHash(), true)) {
             LogPrintf("%s : failed to unarchive deterministic mint %s\n", __func__, dMint.GetPubcoinHash().GetHex());
         } else {
-            zsc2Tracker->Add(dMint, true);
+            zscnTracker->Add(dMint, true);
         }
         listDMintsRestored.emplace_back(dMint);
     }
 }
 
-string CWallet::GetUniqueWalletBackupName(bool fzsc2Auto) const
+string CWallet::GetUniqueWalletBackupName(bool fzscnAuto) const
 {
     stringstream ssDateTime;
     std::string strWalletBackupName = strprintf("%s", DateTimeStrFormat(".%Y-%m-%d-%H-%M", GetTime()));
     ssDateTime << strWalletBackupName;
 
-    return strprintf("wallet%s.dat%s", fzsc2Auto ? "-autozsc2backup" : "", DateTimeStrFormat(".%Y-%m-%d-%H-%M", GetTime()));
+    return strprintf("wallet%s.dat%s", fzscnAuto ? "-autozscnbackup" : "", DateTimeStrFormat(".%Y-%m-%d-%H-%M", GetTime()));
 }
 
 void CWallet::ZPivBackupWallet()
@@ -4510,14 +4510,14 @@ void CWallet::ZPivBackupWallet()
     string strNewBackupName;
 
     for (int i = 0; i < 10; i++) {
-        strNewBackupName = strprintf("wallet-autozsc2backup-%d.dat", i);
+        strNewBackupName = strprintf("wallet-autozscnbackup-%d.dat", i);
         backupPath = backupDir / strNewBackupName;
 
         if (filesystem::exists(backupPath)) {
             //Keep up to 10 backups
             if (i <= 8) {
                 //If the next file backup exists and is newer, then iterate
-                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozsc2backup-%d.dat", i + 1);
+                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozscnbackup-%d.dat", i + 1);
                 if (filesystem::exists(nextBackupPath)) {
                     time_t timeThis = filesystem::last_write_time(backupPath);
                     time_t timeNext = filesystem::last_write_time(nextBackupPath);
@@ -4532,7 +4532,7 @@ void CWallet::ZPivBackupWallet()
                 continue;
             }
             //reset to 0 because name with 9 already used
-            strNewBackupName = strprintf("wallet-autozsc2backup-%d.dat", 0);
+            strNewBackupName = strprintf("wallet-autozscnbackup-%d.dat", 0);
             backupPath = backupDir / strNewBackupName;
             break;
         }
@@ -4542,8 +4542,8 @@ void CWallet::ZPivBackupWallet()
 
     BackupWallet(*this, backupPath.string());
 
-    if(!GetArg("-zsc2backuppath", "").empty()) {
-        filesystem::path customPath(GetArg("-zsc2backuppath", ""));
+    if(!GetArg("-zscnbackuppath", "").empty()) {
+        filesystem::path customPath(GetArg("-zscnbackuppath", ""));
         filesystem::create_directories(customPath);
 
         if(!customPath.has_extension()) {
@@ -4618,7 +4618,7 @@ string CWallet::MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CDetermin
         CWalletDB walletdb(pwalletMain->strWalletFile);
         for (CDeterministicMint dMint : vDMints) {
             dMint.SetTxHash(wtxNew.GetHash());
-            zsc2Tracker->Add(dMint, true);
+            zscnTracker->Add(dMint, true);
         }
     }
 
@@ -4656,7 +4656,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
         //reset all mints
         for (CZerocoinMint mint : vMintsSelected) {
             uint256 hashPubcoin = GetPubCoinHash(mint.GetValue());
-            zsc2Tracker->SetPubcoinNotUsed(hashPubcoin);
+            zscnTracker->SetPubcoinNotUsed(hashPubcoin);
             pwalletMain->NotifyZerocoinChanged(pwalletMain, mint.GetValue().GetHex(), "New", CT_UPDATED);
         }
 
@@ -4685,9 +4685,9 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
     uint256 txidSpend = wtxNew.GetHash();
     for (CZerocoinMint mint : vMintsSelected) {
         uint256 hashPubcoin = GetPubCoinHash(mint.GetValue());
-        zsc2Tracker->SetPubcoinUsed(hashPubcoin, txidSpend);
+        zscnTracker->SetPubcoinUsed(hashPubcoin, txidSpend);
 
-        CMintMeta metaCheck = zsc2Tracker->GetMetaFromPubcoin(hashPubcoin);
+        CMintMeta metaCheck = zscnTracker->GetMetaFromPubcoin(hashPubcoin);
         if (!metaCheck.isUsed) {
             receipt.SetStatus("Error, the mint did not get marked as used", nStatus);
             return false;
@@ -4697,7 +4697,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
     // write new Mints to db
     for (auto& dMint : vNewMints) {
         dMint.SetTxHash(txidSpend);
-        zsc2Tracker->Add(dMint, true);
+        zscnTracker->Add(dMint, true);
     }
 
     receipt.SetStatus("Spend Successful", ZSCN_SPEND_OKAY);  // When we reach this point spending zSCN was successful
@@ -4708,18 +4708,18 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
 bool CWallet::GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint)
 {
     CMintMeta meta;
-    if (!zsc2Tracker->GetMetaFromStakeHash(hashStake, meta))
+    if (!zscnTracker->GetMetaFromStakeHash(hashStake, meta))
         return error("%s: failed to find meta associated with hashStake", __func__);
     return GetMint(meta.hashSerial, mint);
 }
 
 bool CWallet::GetMint(const uint256& hashSerial, CZerocoinMint& mint)
 {
-    if (!zsc2Tracker->HasSerialHash(hashSerial))
+    if (!zscnTracker->HasSerialHash(hashSerial))
         return error("%s: serialhash %s is not in tracker", __func__, hashSerial.GetHex());
 
     CWalletDB walletdb(strWalletFile);
-    CMintMeta meta = zsc2Tracker->Get(hashSerial);
+    CMintMeta meta = zscnTracker->Get(hashSerial);
     if (meta.isDeterministic) {
         CDeterministicMint dMint;
         if (!walletdb.ReadDeterministicMint(meta.hashPubcoin, dMint))
@@ -4738,7 +4738,7 @@ bool CWallet::GetMint(const uint256& hashSerial, CZerocoinMint& mint)
 
 bool CWallet::IsMyMint(const CBigNum& bnValue) const
 {
-    if (zsc2Tracker->HasPubcoin(bnValue))
+    if (zscnTracker->HasPubcoin(bnValue))
         return true;
 
     return zwalletMain->IsInMintPool(bnValue);
@@ -4748,11 +4748,11 @@ bool CWallet::UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint2
 {
     uint256 hashValue = GetPubCoinHash(bnValue);
     CZerocoinMint mint;
-    if (zsc2Tracker->HasPubcoinHash(hashValue)) {
-        CMintMeta meta = zsc2Tracker->GetMetaFromPubcoin(hashValue);
+    if (zscnTracker->HasPubcoinHash(hashValue)) {
+        CMintMeta meta = zscnTracker->GetMetaFromPubcoin(hashValue);
         meta.nHeight = nHeight;
         meta.txid = txid;
-        return zsc2Tracker->UpdateState(meta);
+        return zscnTracker->UpdateState(meta);
     } else {
         //Check if this mint is one that is in our mintpool (a potential future mint from our deterministic generation)
         if (zwalletMain->IsInMintPool(bnValue)) {
@@ -4768,18 +4768,18 @@ bool CWallet::UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint2
 bool CWallet::SetMintUnspent(const CBigNum& bnSerial)
 {
     uint256 hashSerial = GetSerialHash(bnSerial);
-    if (!zsc2Tracker->HasSerialHash(hashSerial))
+    if (!zscnTracker->HasSerialHash(hashSerial))
         return error("%s: did not find mint", __func__);
 
-    CMintMeta meta = zsc2Tracker->Get(hashSerial);
-    zsc2Tracker->SetPubcoinNotUsed(meta.hashPubcoin);
+    CMintMeta meta = zscnTracker->Get(hashSerial);
+    zscnTracker->SetPubcoinNotUsed(meta.hashPubcoin);
     return true;
 }
 
 bool CWallet::DatabaseMint(CDeterministicMint& dMint)
 {
     CWalletDB walletdb(strWalletFile);
-    zsc2Tracker->Add(dMint, true);
+    zscnTracker->Add(dMint, true);
     return true;
 }
 
@@ -4878,7 +4878,7 @@ void CWallet::PrecomputeSpends()
             CoinWitnessCacheData tempDataHolder;
 
             {
-                TRY_LOCK(zsc2Tracker->cs_spendcache, fLocked);
+                TRY_LOCK(zscnTracker->cs_spendcache, fLocked);
                 if (!fLocked)
                     continue;
 
@@ -4894,7 +4894,7 @@ void CWallet::PrecomputeSpends()
 
                 uint256 serialHash = stakeInput->GetSerialHash();
                 setInputHashes.insert(serialHash);
-                CoinWitnessData* witnessData = zsc2Tracker->GetSpendCache(serialHash);
+                CoinWitnessData* witnessData = zscnTracker->GetSpendCache(serialHash);
 
                 // Initialize nHeightStop so it can be set below
                 int nHeightStop = 0;
